@@ -1,0 +1,27 @@
+{
+  "name": "HHKit",
+  "version": "0.0.1",
+  "summary": "A short description of HHKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hutaol/HHKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Henry": "1325049637@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/hutaol/HHKit.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HHKit/Classes/**/*",
+  "dependencies": {
+    "Toast": [
+      "~> 4.0.0"
+    ]
+  }
+}

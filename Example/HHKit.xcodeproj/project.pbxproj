@@ -366,10 +366,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HHKit_Example/Pods-HHKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HHKit/HHKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HHKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

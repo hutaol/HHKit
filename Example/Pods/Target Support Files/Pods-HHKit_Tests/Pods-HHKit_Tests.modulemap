@@ -1,0 +1,6 @@
+framework module Pods_HHKit_Tests {
+  umbrella header "Pods-HHKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

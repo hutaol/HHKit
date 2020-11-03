@@ -1,0 +1,31 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HHKit (0.0.1):
+    - Toast (~> 4.0.0)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - HHKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - Toast
+
+EXTERNAL SOURCES:
+  HHKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HHKit: a376e97194151dfbb64051011467fda6cc18ead4
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 28bfbb571e1d5a04330ebdb141161f803b8fc8f8
+
+COCOAPODS: 1.10.0
