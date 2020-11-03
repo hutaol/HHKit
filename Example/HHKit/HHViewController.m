@@ -40,7 +40,6 @@
 //    }];
     [HHAlertTool alertWithMessage:@"22"];
     
-
 }
 
 - (void)didReceiveMemoryWarning

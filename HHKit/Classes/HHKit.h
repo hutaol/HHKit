@@ -12,6 +12,7 @@
 #import "HHAlertTool.h"
 #import "HHAlertCustomTool.h"
 
+#import "UIView+HHFrame.h"
 #import "MBProgressHUD+HHTool.h"
 #import "UIWindow+HHHelper.h"
 

@@ -142,7 +142,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		024B28C993E83A1547D10F69D81FDFD5 /* SPAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SPAlertController.framework; path = SPAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		024B28C993E83A1547D10F69D81FDFD5 /* SPAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02853A8FD2FE7CA541E7180A4162BEAE /* HHAlertTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHAlertTool.m; path = HHKit/Classes/HHAlertTool.m; sourceTree = "<group>"; };
 		04BFFDA513914FF38578217FE30AFD54 /* Toast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Info.plist"; sourceTree = "<group>"; };
 		04DBB90D1F6CBA26881A5B9C478248FA /* SPAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPAlertController-Info.plist"; sourceTree = "<group>"; };
@@ -161,13 +161,15 @@
 		2446A90E3ABB02548E38CA2135DC4977 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		24B7F85B1C76800985332E4B90C57B79 /* MBProgressHUD+HHTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+HHTool.h"; path = "HHKit/Classes/MBProgressHUD+HHTool.h"; sourceTree = "<group>"; };
 		27542A00B5B4D7C8A501714C76CA2AE1 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		27EC9AB70F4A7A5694027BBAC3C528C6 /* HHKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HHKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		287130B9AEA3BC6A609E20EF25773922 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		27EC9AB70F4A7A5694027BBAC3C528C6 /* HHKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HHKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		287130B9AEA3BC6A609E20EF25773922 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2CBA00B2401D2FD4AAEFB25C1E0F5176 /* Pods-HHKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HHKit_Tests.modulemap"; sourceTree = "<group>"; };
 		2D61066531DAE5A6546DBB6E2F1FA9AA /* Pods-HHKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		31C933BB0C99DD1E5B06879E781AFFBE /* UIWindow+HHHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+HHHelper.h"; path = "HHKit/Classes/UIWindow+HHHelper.h"; sourceTree = "<group>"; };
 		3207F7D2AE26A8CB5B0D3A9B6D3B4C12 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		343BC95C082C6397CCBAEED5542E85B9 /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/UIView+Toast.h"; sourceTree = "<group>"; };
+		352DBB3925516FB0006D2A42 /* UIView+HHFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+HHFrame.h"; path = "HHKit/Classes/UIView+HHFrame.h"; sourceTree = "<group>"; };
+		352DBB3A25516FB0006D2A42 /* UIView+HHFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+HHFrame.m"; path = "HHKit/Classes/UIView+HHFrame.m"; sourceTree = "<group>"; };
 		379DB671911727899426CE9B27EEE829 /* Toast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-umbrella.h"; sourceTree = "<group>"; };
 		37EF21499AD70F11C2260CF447FDAFB9 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		3C140982C775D5697D527201EACC9120 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
@@ -182,11 +184,11 @@
 		52204638F1E6A22467AEC36B4D831FC4 /* HHKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKit.debug.xcconfig; sourceTree = "<group>"; };
 		53F69B44AF932B4DCAA7B92994EE553D /* UIView+Toast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Toast/UIView+Toast.m"; sourceTree = "<group>"; };
 		553587C0AB8C15F6591BB08E6C25805A /* NSBundle+HHKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+HHKit.m"; path = "HHKit/Classes/NSBundle+HHKit.m"; sourceTree = "<group>"; };
-		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast.framework; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57BEE93822E2F6F3AC4823F82BCFF70F /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		584683756B99C47078C94085FCC3FA36 /* HHKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HHKit.framework; path = HHKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		584683756B99C47078C94085FCC3FA36 /* HHKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HHKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EACA6B0C8A3E231DA5F0D9812431A3 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDDC60875317B3BD8DBC07164C1DD9B /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		653F70431BD3B81CE5F49588C516EB52 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		6B10AE90644AF3F4FC90C71D0C993A85 /* Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = "Toast-Framework/Toast.h"; sourceTree = "<group>"; };
@@ -199,24 +201,24 @@
 		80DB001E9B83EF05637835C1C9AD9955 /* HHAlertTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHAlertTool.h; path = HHKit/Classes/HHAlertTool.h; sourceTree = "<group>"; };
 		886EE0A552AC521F6B25AC7CF0C88A24 /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		88ABF29A07DB74F502B6CAEA3B4A4EE7 /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C545E2DCBE918E1B4EC7B1F804B03D2 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		8F7B2C7C30DAF9A349E30B63AB449860 /* Pods-HHKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9068A772A7B16E90E40574C6B0196851 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		911AF9C5FD29EE29E7CDDF8DC0CFA4D7 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		962EF12B4B67323AC5C4EE0021F0EED3 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		9634D156BAF3EB7BD432AC2AC01BB697 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9634D156BAF3EB7BD432AC2AC01BB697 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		967E496033BE45FB2DF966FDB661F284 /* SPAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPAlertController.release.xcconfig; sourceTree = "<group>"; };
 		99FDDB8653477F56E0B5DE295096C1F8 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		9C58E48EB25638400313E721C9119EFD /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		9D478929F3EE389374FA6B21163F436B /* UIWindow+HHHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+HHHelper.m"; path = "HHKit/Classes/UIWindow+HHHelper.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A09395783412FF22388409BDD72D5BC1 /* HHAlertCustomTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHAlertCustomTool.h; path = HHKit/Classes/HHAlertCustomTool.h; sourceTree = "<group>"; };
 		A50B199EBC83296A497D752114A8EB91 /* Pods-HHKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1A17B941F9D1F0C5297F1B06000820 /* Pods-HHKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AC35E46D997D0FB08F95534F3B99354A /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		AE08924C8CB15F61EE7DF753C1EADF51 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B000BAF0EBAD3066DCA92D4F7F0F17FE /* Pods_HHKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HHKit_Example.framework; path = "Pods-HHKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B000BAF0EBAD3066DCA92D4F7F0F17FE /* Pods_HHKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07915D5D7A85742366FF76B77CB2402 /* Pods-HHKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B4427C664012AD43F31DB63F12A9189C /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DD7C42E7809E00BCAB36559EAD7FEB /* HHKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHKit-dummy.m"; sourceTree = "<group>"; };
@@ -225,7 +227,7 @@
 		C1243802F767863244742BDCE8E64487 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		C1BE19D83491574665FF1AF62ED4FB9D /* SPAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPAlertController-umbrella.h"; sourceTree = "<group>"; };
 		C3588BB31328556DFC1A3029EDA47FD6 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		C438EFC90A26CA26B646ED32059A9FD0 /* Pods_HHKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HHKit_Tests.framework; path = "Pods-HHKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C438EFC90A26CA26B646ED32059A9FD0 /* Pods_HHKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CEC169C1F053DAC07A72FA61E1951A /* HHKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HHKit.bundle; path = HHKit/Assets/HHKit.bundle; sourceTree = "<group>"; };
 		C9EF4F43F8426997C6CA34CE75554A6E /* Pods-HHKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D1A2FEB7F1B07AE8413A674E1669BD9E /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -352,7 +354,6 @@
 				53F69B44AF932B4DCAA7B92994EE553D /* UIView+Toast.m */,
 				554515CBB5BFDCEA861425B36FF1C2AB /* Support Files */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -363,7 +364,6 @@
 				0B03EB47FDEE5970B2238518C3DF3BC4 /* SPAlertController.m */,
 				D40704F248B351FAB3C8CCDA368CE8D7 /* Support Files */,
 			);
-			name = SPAlertController;
 			path = SPAlertController;
 			sourceTree = "<group>";
 		};
@@ -391,7 +391,6 @@
 				99FDDB8653477F56E0B5DE295096C1F8 /* MBProgressHUD.m */,
 				5953A6E379D46B935F9F4E0A0BFC2019 /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -552,13 +551,14 @@
 				537B1176C5F099B3A951EC09D28DA448 /* Support Files */,
 				58E9618F5C9BC83F653045AC353570F3 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
 		F6546719DF1E63A148F6CE30BBCA980B /* HHKit */ = {
 			isa = PBXGroup;
 			children = (
+				352DBB3925516FB0006D2A42 /* UIView+HHFrame.h */,
+				352DBB3A25516FB0006D2A42 /* UIView+HHFrame.m */,
 				A09395783412FF22388409BDD72D5BC1 /* HHAlertCustomTool.h */,
 				4D5F0FA207753E42A252CD9C52FB9C94 /* HHAlertCustomTool.m */,
 				80DB001E9B83EF05637835C1C9AD9955 /* HHAlertTool.h */,
@@ -1516,8 +1516,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
