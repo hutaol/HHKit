@@ -62,11 +62,11 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0FC19198F714A78FA2460DD /* Pods-HHKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-HHKit_Example/Pods-HHKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B30E7B63B32A465B2D2E9057 /* HHKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HHKit.podspec; path = ../HHKit.podspec; sourceTree = "<group>"; };
+		B30E7B63B32A465B2D2E9057 /* HHKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HHKit.podspec; path = ../HHKit.podspec; sourceTree = "<group>"; };
 		E574D3E1E8FB62C5EE9C528A /* Pods-HHKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-HHKit_Tests/Pods-HHKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EEAA5F93BC116C28654BD8CC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EEAA5F93BC116C28654BD8CC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F380090859F98EF8B6315DE0 /* Pods-HHKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HHKit_Tests/Pods-HHKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FE1A9EA47A9D0DAA14A1D364 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FE1A9EA47A9D0DAA14A1D364 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				F380090859F98EF8B6315DE0 /* Pods-HHKit_Tests.debug.xcconfig */,
 				E574D3E1E8FB62C5EE9C528A /* Pods-HHKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -366,11 +366,15 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HHKit_Example/Pods-HHKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HHKit/HHKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SPAlertController/SPAlertController.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HHKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SPAlertController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +522,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HHKit/HHKit-Prefix.pch";
 				INFOPLIST_FILE = "HHKit/HHKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +539,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HHKit/HHKit-Prefix.pch";
 				INFOPLIST_FILE = "HHKit/HHKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

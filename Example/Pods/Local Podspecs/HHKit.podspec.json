@@ -16,12 +16,19 @@
     "tag": "0.0.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "HHKit/Classes/**/*",
+  "resources": "HHKit/Assets/*.{png,xib,nib,bundle}",
   "dependencies": {
     "Toast": [
       "~> 4.0.0"
+    ],
+    "SPAlertController": [
+      "~> 4.0.0"
+    ],
+    "MBProgressHUD": [
+      "~> 1.2.0"
     ]
   }
 }

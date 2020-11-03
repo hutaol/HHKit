@@ -5,7 +5,11 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - HHKit (0.0.1):
+    - MBProgressHUD (~> 1.2.0)
+    - SPAlertController (~> 4.0.0)
     - Toast (~> 4.0.0)
+  - MBProgressHUD (1.2.0)
+  - SPAlertController (4.0.0)
   - Toast (4.0.0)
 
 DEPENDENCIES:
@@ -15,6 +19,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - MBProgressHUD
+    - SPAlertController
     - Toast
 
 EXTERNAL SOURCES:
@@ -23,9 +29,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HHKit: a376e97194151dfbb64051011467fda6cc18ead4
+  HHKit: 5c6f9899ff08ae033570abaa70b086cafd1cdbe3
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SPAlertController: b245d7a5e17d612da051f2612aca3703f21d108f
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 28bfbb571e1d5a04330ebdb141161f803b8fc8f8
+PODFILE CHECKSUM: e23a7d8510ea25301fdf58b390f7310410690839
 
 COCOAPODS: 1.10.0

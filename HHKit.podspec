@@ -28,16 +28,21 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/hutaol/HHKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'HHKit/Classes/**/*'
   
   # s.resource_bundles = {
   #   'HHKit' => ['HHKit/Assets/*.png']
   # }
+  s.resources   = 'HHKit/Assets/*.{png,xib,nib,bundle}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'Toast', '~> 4.0.0'
+  
+  s.dependency 'Toast', '~> 4.0.0'
+  s.dependency 'SPAlertController', '~> 4.0.0'
+  s.dependency 'MBProgressHUD', '~> 1.2.0'
+  
    
 end

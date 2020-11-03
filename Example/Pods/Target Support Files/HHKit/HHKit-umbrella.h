@@ -10,9 +10,12 @@
 #endif
 #endif
 
+#import "HHAlertCustomTool.h"
 #import "HHAlertTool.h"
 #import "HHKit.h"
 #import "HHToastTool.h"
+#import "MBProgressHUD+HHTool.h"
+#import "NSBundle+HHKit.h"
 #import "UIWindow+HHHelper.h"
 
 FOUNDATION_EXPORT double HHKitVersionNumber;
