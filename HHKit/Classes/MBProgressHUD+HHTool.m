@@ -21,7 +21,7 @@ const NSInteger hideTime = 2;
 }
 + (void)show:(NSString *)message view:(UIView *)view {
     if (!view) {
-        view = [UIWindow keyWindow];
+        view = [UIWindow hh_keyWindow];
     }
     MBProgressHUD *hud = [self createMBProgressHUD:view];
     hud.label.text = message;
@@ -63,7 +63,7 @@ const NSInteger hideTime = 2;
 
 + (void)showCustomIcon:(UIImage *)icon message:(NSString *)message duration:(NSUInteger)time view:(UIView *)view {
     if (!view) {
-        view = [UIWindow keyWindow];
+        view = [UIWindow hh_keyWindow];
     }
     MBProgressHUD *hud = [self createMBProgressHUD:view];
     hud.label.text = message;

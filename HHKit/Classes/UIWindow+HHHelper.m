@@ -9,7 +9,7 @@
 
 @implementation UIWindow (HHHelper)
 
-+ (UIWindow *)keyWindow {
++ (UIWindow *)hh_keyWindow {
     if (@available(iOS 13.0, *)) {
         UIWindow *foundWindow = nil;
         NSArray *windows = [[UIApplication sharedApplication] windows];
@@ -25,7 +25,7 @@
 }
 
 + (UIViewController *)topViewController {
-    return [self keyWindow].currentTopViewController;
+    return [self hh_keyWindow].currentTopViewController;
 }
 
 - (UIViewController *)topRootController {

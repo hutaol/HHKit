@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, ToastToolPosition) {
 
 + (void)show:(NSString *)message position:(ToastToolPosition)position showTime:(float)showTime;
 
-+ (void)show:(NSString *)message position:(ToastToolPosition)position showTime:(float)showTime view:(nullable UIView *)view;
++ (void)show:(NSString *)message position:(id)position showTime:(float)showTime view:(nullable UIView *)view;
 
 + (void)showActivity:(UIView *)view;
 

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIViewController *)currentTopViewController;
 
-+ (UIWindow *)keyWindow;
++ (UIWindow *)hh_keyWindow;
 
 + (UIViewController *)topViewController;
 

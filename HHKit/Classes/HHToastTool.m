@@ -44,14 +44,21 @@
 }
 
 + (void)show:(NSString *)message position:(ToastToolPosition)position showTime:(float)showTime {
-    [self show:message position:position showTime:showTime view:nil];
+//    [self show:message position:position showTime:showTime view:nil];
 }
 
-+ (void)show:(NSString *)message position:(ToastToolPosition)position showTime:(float)showTime view:(UIView *)view {
++ (void)show:(NSString *)message position:(id)position showTime:(float)showTime view:(UIView *)view {
     if (!view) {
-        view = [UIWindow keyWindow];
+        view = [UIWindow hh_keyWindow];
     }
-    switch (position) {
+    
+    // [NSValue valueWithCGPoint:CGPointMake(110, 110)
+    if ([position isKindOfClass:[NSValue class]]) {
+        [view makeToast:message duration:showTime position:position];
+        return;
+    }
+    
+    switch ((int)position) {
         case ToastToolPositionBottom:
             [view makeToast:message duration:showTime position:CSToastPositionBottom];
             break;
@@ -69,7 +76,7 @@
 
 + (void)showActivity:(UIView *)view {
     if (!view) {
-        view = [UIWindow keyWindow];
+        view = [UIWindow hh_keyWindow];
     }
     [view makeToastActivity:CSToastPositionCenter];
 }
