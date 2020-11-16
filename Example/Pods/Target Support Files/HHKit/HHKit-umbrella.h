@@ -12,10 +12,14 @@
 
 #import "HHAlertCustomTool.h"
 #import "HHAlertTool.h"
+#import "HHConfiguration.h"
+#import "HHDefine.h"
 #import "HHKit.h"
+#import "HHPathTool.h"
 #import "HHToastTool.h"
 #import "MBProgressHUD+HHTool.h"
 #import "NSBundle+HHKit.h"
+#import "UIView+HHFrame.h"
 #import "UIWindow+HHHelper.h"
 
 FOUNDATION_EXPORT double HHKitVersionNumber;

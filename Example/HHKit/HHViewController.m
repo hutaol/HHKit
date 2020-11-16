@@ -38,7 +38,10 @@
 //    [HHAlertTool sheetWithMessage:@"22" buttonTitles:@[@"33"] actionsBlock:^(NSInteger buttonIndex, NSString * _Nonnull buttonTitle) {
 //
 //    }];
-    [HHAlertTool alertWithMessage:@"22"];
+    [HHConfiguration languageType:HHLanguageChineseSimplified];
+    [HHAlertCustomTool alertWithMessage:@"111"];
+
+//    [HHAlertTool alertWithMessage:@"22"];
     
 }
 

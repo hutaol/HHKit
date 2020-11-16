@@ -7,14 +7,14 @@
 
 #import "MBProgressHUD+HHTool.h"
 #import "UIWindow+HHHelper.h"
-#import "NSBundle+HHKit.h"
+#import "HHDefine.h"
 
 const NSInteger hideTime = 2;
 
 @implementation MBProgressHUD (HHTool)
 
 + (void)show {
-    [self show:@"请稍后"];
+    [self show:GetLocalLanguageTextValue(@"LoadingWaiting")];
 }
 + (void)show:(NSString *)message {
     [self show:message view:nil];
@@ -42,7 +42,7 @@ const NSInteger hideTime = 2;
 }
 
 + (void)showSuccess:(NSString *)success duration:(NSUInteger)time view:(UIView *)view {
-    [self showCustomIcon:[NSBundle getImage:@"hud_success"] message:success duration:time view:view];
+    [self showCustomIcon:GetImageWithName(@"hud_success") message:success duration:time view:view];
 }
 
 + (void)showError:(NSString *)error {
@@ -58,7 +58,7 @@ const NSInteger hideTime = 2;
 }
 
 + (void)showError:(NSString *)error duration:(NSUInteger)time view:(UIView *)view {
-    [self showCustomIcon:[NSBundle getImage:@"hud_error"] message:error duration:time view:view];
+    [self showCustomIcon:GetImageWithName(@"hud_error") message:error duration:time view:view];
 }
 
 + (void)showCustomIcon:(UIImage *)icon message:(NSString *)message duration:(NSUInteger)time view:(UIView *)view {

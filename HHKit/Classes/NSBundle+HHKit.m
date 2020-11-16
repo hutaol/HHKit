@@ -6,11 +6,11 @@
 //
 
 #import "NSBundle+HHKit.h"
-
+#import "HHDefine.h"
 
 @implementation NSBundle (HHKit)
 
-+ (instancetype)resourceBundle {
++ (instancetype)hhResourceBundle {
     static NSBundle *hhBundle = nil;
     if (hhBundle == nil) {
         NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(@"HHAlertTool")];
@@ -25,8 +25,8 @@
     return hhBundle;
 }
 
-+ (UIImage *)getImage:(NSString *)name {
-    NSString *path = [[[NSBundle resourceBundle] resourcePath] stringByAppendingPathComponent:name];
++ (UIImage *)getImageForHHKit:(NSString *)name {
+    NSString *path = [[[NSBundle hhResourceBundle] resourcePath] stringByAppendingPathComponent:name];
     UIImage *image = [UIImage imageWithContentsOfFile:path];
     if (!image) {
         image = [UIImage imageNamed:path];
@@ -36,18 +36,18 @@
 
 
 static NSBundle *bundle = nil;
-+ (void)resetLanguage {
++ (void)hhResetLanguage {
     bundle = nil;
 }
 
-+ (NSString *)localizedStringForKey:(NSString *)key {
-    return [self localizedStringForKey:key value:nil];
++ (NSString *)hhLocalizedStringForKey:(NSString *)key {
+    return [self hhLocalizedStringForKey:key value:nil];
 }
 
-+ (NSString *)localizedStringForKey:(NSString *)key value:(NSString *)value {
++ (NSString *)hhLocalizedStringForKey:(NSString *)key value:(NSString *)value {
     if (bundle == nil) {
         // 从bundle中查找资源
-        bundle = [NSBundle bundleWithPath:[[NSBundle resourceBundle] pathForResource:[self getLanguage] ofType:@"lproj"]];
+        bundle = [NSBundle bundleWithPath:[[NSBundle hhResourceBundle] pathForResource:[self getLanguage] ofType:@"lproj"]];
     }
     value = [bundle localizedStringForKey:key value:value table:nil];
     return [[NSBundle mainBundle] localizedStringForKey:key value:value table:nil];

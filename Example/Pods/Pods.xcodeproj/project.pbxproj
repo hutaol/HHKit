@@ -8,182 +8,189 @@
 
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = C1243802F767863244742BDCE8E64487 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		008B083E871A725E936F4915F7B9D380 /* MBProgressHUD+HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BDF448090C3E1D25E4100D89C18AC /* MBProgressHUD+HHTool.m */; };
-		0813ED92F373FB850F3E197EA9D7B499 /* SPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B03EB47FDEE5970B2238518C3DF3BC4 /* SPAlertController.m */; };
-		09D8B140280858D9C1D27B3EF163FB42 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3588BB31328556DFC1A3029EDA47FD6 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A74D30AEE56FBD0B0EAA760D891DB2A /* NSBundle+HHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D1CE42EE698BACEDD9FF66BFEFBC6C3 /* NSBundle+HHKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F879310FA6A2BDAC22BCC9ECA02846D /* HHAlertTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA6D2C4FB17D1F87410A0355768AF5E /* HHAlertTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10E0FF5CF0EF850ADE26F8DFD6600CB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FFE0E170768EDC71B600FD305D82FB /* UIApplication+StrictKeyWindow.m */; };
 		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07FAB38C906D7BAA248C0FDEA5DACC1 /* XCTest.framework */; };
-		1235D3929464E2FBC015C00C6F35FBB9 /* HHKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A9E153285A475D6098D21E3D6E908F /* HHKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CBBB33476DCF1F64B45AA2C59DBB53 /* UIImage+Diff.m */; };
-		19D2BC10CA3EE833A8746CD9E7C5F459 /* Toast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 379DB671911727899426CE9B27EEE829 /* Toast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CAF361221E282F4B502A5F53490979A /* HHAlertTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 80DB001E9B83EF05637835C1C9AD9955 /* HHAlertTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D00D397E0DF4B5763BF2E7707EF5E0C /* HHKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F44240A447F21538504D5067FADDC /* HHKit-dummy.m */; };
 		1D9ABA9BD063D8F1017C39BF5B68C9D7 /* Pods-HHKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C55BEDF0DEA8A4C14180CC608B0D0 /* Pods-HHKit_Example-dummy.m */; };
-		1E4CCFBC9B104A7BAA3C08F545080F61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
-		1FC725FF3CD1BD6FB96FDA36D8137BCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65322882E1FAD45745F446C52B0B2AE /* CoreGraphics.framework */; };
+		2089536F1FD7120181123DF6649710C4 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F69B44AF932B4DCAA7B92994EE553D /* UIView+Toast.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		20D4CF3F3A84CEEC61887B1C310C67E8 /* HHKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD480FB2E418A5687F6CB6B7D53F144 /* HHKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21226923769EFF4C7DBC1CCC7AFEE4D4 /* Pods-HHKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC301BD49EF3C6562CD843A0FD6FE8C /* Pods-HHKit_Tests-dummy.m */; };
-		227347448170ED5210375EE07D0DEEEF /* UIWindow+HHHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C933BB0C99DD1E5B06879E781AFFBE /* UIWindow+HHHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28A3BC89C0D724506B9C9AA70E751E67 /* SPAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0581097FC1C268667B4A392D7EB3DA8E /* SPAlertController.framework */; };
-		2C595DC192E58670CAAD9D2A85787864 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1473B97FBDC8810E011A00DC9C24BDBC /* QuartzCore.framework */; };
+		212F126868396D879E5ACAF1E63AFCF3 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 343BC95C082C6397CCBAEED5542E85B9 /* UIView+Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24DE34AE9062A787AB73CB6F9C9723EC /* SPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B03EB47FDEE5970B2238518C3DF3BC4 /* SPAlertController.m */; };
+		28B034B470D52BED3EFF09369A6BA756 /* Toast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4427C664012AD43F31DB63F12A9189C /* Toast.framework */; };
+		2B854CC84BB159B9E1205BB687E52801 /* SPAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9586A3056853568200EE9E97B212B06 /* SPAlertController-dummy.m */; };
+		2D9AC63EC75E7CBFFC5CE34F38226920 /* MBProgressHUD+HHTool.h in Headers */ = {isa = PBXBuildFile; fileRef = F410DB492C315B9B066758A2492CB31D /* MBProgressHUD+HHTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C140982C775D5697D527201EACC9120 /* UIImage+Compare.m */; };
 		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1473B97FBDC8810E011A00DC9C24BDBC /* QuartzCore.framework */; };
-		2FBF1DE47308F033E76107E67494DCCC /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 343BC95C082C6397CCBAEED5542E85B9 /* UIView+Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B0476B785FB89EFF399D8716D71A987 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F69B44AF932B4DCAA7B92994EE553D /* UIView+Toast.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3DE896A2D9CEB2D0DF828B5559713CFB /* HHKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DD7C42E7809E00BCAB36559EAD7FEB /* HHKit-dummy.m */; };
+		303DBE29EF1FF9689F46A849F3297267 /* UIWindow+HHHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF31A91710EDD5E31A65602BB8BCD95 /* UIWindow+HHHelper.m */; };
+		362C9839E28EC2253F08C8D6E8B92FE8 /* HHAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C57610436AC8C0808D36C726EAFB48 /* HHAlertTool.m */; };
+		38BF56011EAC193D14C7E95A8F93EEE8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1473B97FBDC8810E011A00DC9C24BDBC /* QuartzCore.framework */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D4890E75C9BD1E24D95C89650FAF4FA4 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		45133BD8CEAFE9F7EF7DBD18AD2E92BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
-		4DBAE841AC6732AA802BA86B668957E8 /* Toast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4427C664012AD43F31DB63F12A9189C /* Toast.framework */; };
-		5902566EED9E2B337E41DC188AF35ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
-		5C0D7FD8CCC11D2D3427581FFD146DEF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FDDB8653477F56E0B5DE295096C1F8 /* MBProgressHUD.m */; };
+		420E8734BD08AA1A0EB49C0CEC0C84E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
+		46E4CE72D350DD6C8474756E295534E8 /* NSBundle+HHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 89094FCAFBAA019271CE3299E4ACD627 /* NSBundle+HHKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C00DAAC81F9E0DE2A065658862C1D87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
+		4C577FB78F8E0E2B50AF1B4898CB887E /* UIView+HHFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 524817FFEED7FFE713921FDC5697D5A7 /* UIView+HHFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52A5CDEBBBB4354089FECF9DCCDCDFD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1473B97FBDC8810E011A00DC9C24BDBC /* QuartzCore.framework */; };
+		547F72E60B8BF88B82C7A08C9FBAAB2F /* SPAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0581097FC1C268667B4A392D7EB3DA8E /* SPAlertController.framework */; };
+		54C9918585DB3B855910C4B4F75B7396 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A2FEB7F1B07AE8413A674E1669BD9E /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55256515762E1F74EE133F3D8703B3AD /* SPAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1BE19D83491574665FF1AF62ED4FB9D /* SPAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5715AF7A5320BDB85E64847E35C855F2 /* SPAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A9D8F5B08370C73734247CEAAEC4A3 /* SPAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ACB59115D5ADE0D440082331E2360B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65322882E1FAD45745F446C52B0B2AE /* CoreGraphics.framework */; };
 		5D3A4FB8BDA8FBE5C49E65A12B75450A /* Pods-HHKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2534DD5F5EEB891DAEF23E7E370264F /* Pods-HHKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A2D2F2A35075C10904AF28E4BA78D1F /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C58E48EB25638400313E721C9119EFD /* MBProgressHUD-dummy.m */; };
+		63ACF9F3B6224497AF7298CF47F2A3DA /* NSBundle+HHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1D9A5846AEC03ADCD49645FAC1637 /* NSBundle+HHKit.m */; };
+		67B5AF4371F2EB0D4252775C55A40BFD /* HHAlertCustomTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F0DD7D48D5C102A5D2C26DC6607D /* HHAlertCustomTool.m */; };
+		6D808CA2CD68A042BFA6151DD61C1896 /* HHConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = EA0B73B5F7BB4D0BAF376DB2A8105163 /* HHConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EACA6B0C8A3E231DA5F0D9812431A3 /* FBSnapshotTestCase-dummy.m */; };
+		75F4E152C69AB09BFDEB114C87303C29 /* HHConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 237FCED68A20CE1B4DAD73CF4CEEF4A8 /* HHConfiguration.m */; };
+		78F5635A46FB239D18A22489A57BE357 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C58E48EB25638400313E721C9119EFD /* MBProgressHUD-dummy.m */; };
+		7C928362CB7BEDC7D710C8807A4912FA /* HHKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E840F664BE23CE8B6487F38943BD9781 /* HHKit.bundle */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB615727CC20DBFB7F3923E921EF6F /* FBSnapshotTestController.m */; };
-		8AE5B9AAA4BD0F6EA7071B7FBE008ABC /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B10AE90644AF3F4FC90C71D0C993A85 /* Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 962EF12B4B67323AC5C4EE0021F0EED3 /* FBSnapshotTestCase.m */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 911AF9C5FD29EE29E7CDDF8DC0CFA4D7 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9415BB6453C61ED02054F1EC6EE6743D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
-		96FC2E95AE923C5C8C88B90BB055B2AE /* HHToastTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 139ADED29AF7BB6AD11FD184F16FE6B8 /* HHToastTool.m */; };
+		956CF4BBCF69010AF34F2371840C9491 /* HHDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = FA87EAC0A89203C316816494C2A658E6 /* HHDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C01EA00D96A4E4C1BFF000DEA25F30D /* HHToastTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D35C52C5E33F7D5C19D27C5F64336039 /* HHToastTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C7C133AFB3A19E3B280087B8E377816 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3588BB31328556DFC1A3029EDA47FD6 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A772A7B16E90E40574C6B0196851 /* SwiftSupport.swift */; };
-		A44A36D6E5E602EB89BB43F9DBC4D07A /* HHAlertCustomTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F0FA207753E42A252CD9C52FB9C94 /* HHAlertCustomTool.m */; };
+		9F48A5822A47FA4F65BA390DE1DDC122 /* Toast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ABF29A07DB74F502B6CAEA3B4A4EE7 /* Toast-dummy.m */; };
+		9FA49381512F64DDBA9CB7DDE9927F58 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FDDB8653477F56E0B5DE295096C1F8 /* MBProgressHUD.m */; };
+		A18F20EFA1F0ABC571A154F20CF5E2E0 /* HHAlertCustomTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3459652BE2FF00B152436B75E8F1496A /* HHAlertCustomTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2B3FCB2F6258E7D57D7611ABCFFB0F2 /* Toast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 379DB671911727899426CE9B27EEE829 /* Toast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A327CBE46CF40295ABC6F05840841478 /* HHPathTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B0045C893EF9CB7B69267C2F9DEDB08 /* HHPathTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A44B0F12920AA8CD998B7F901E033397 /* UIWindow+HHHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 994CDAC3B256828C450C972DD3B4136A /* UIWindow+HHHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BEE93822E2F6F3AC4823F82BCFF70F /* UIImage+Snapshot.m */; };
-		AACEE6C1E7C131C74F9EF3554303F030 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A2FEB7F1B07AE8413A674E1669BD9E /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB8D078FA064D8F42F013DD62DF9B7B7 /* HHToastTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F9E4B25B1D6CA11E3236F1AA4A96D0B /* HHToastTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2D966120AA55F900102FE46B904D7DA /* NSBundle+HHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 553587C0AB8C15F6591BB08E6C25805A /* NSBundle+HHKit.m */; };
+		AC33C6F819B3EBF60AA8DCC101447376 /* HHToastTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A15709CC8D73D3A6ED57AFB0E0C56CF4 /* HHToastTool.m */; };
+		B4D84B8084FE30FB23C3F97DF6051737 /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B10AE90644AF3F4FC90C71D0C993A85 /* Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = E04658C72E8968556719F7F30EBE1187 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B8088478CF9F65DB45E3913E4AF6AD8F /* SPAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A9D8F5B08370C73734247CEAAEC4A3 /* SPAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B828148379AF2618FAF053FF1796F9A9 /* HHAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 02853A8FD2FE7CA541E7180A4162BEAE /* HHAlertTool.m */; };
 		B848B5BE83EF445161471ACDA114D5F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
-		B938F965E49D9174F43084F9BE5A0EC3 /* HHAlertCustomTool.h in Headers */ = {isa = PBXBuildFile; fileRef = A09395783412FF22388409BDD72D5BC1 /* HHAlertCustomTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB707D9CA380B88E2CF5953A35E1E1B8 /* UIKit.framework */; };
-		C1398F7F4CF00DB55ABDEB7426BD1DEB /* SPAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1BE19D83491574665FF1AF62ED4FB9D /* SPAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C42869DBE1CA2C078EC2E82B59EE1F97 /* Toast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ABF29A07DB74F502B6CAEA3B4A4EE7 /* Toast-dummy.m */; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 37EF21499AD70F11C2260CF447FDAFB9 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5AC710BF73D156721703CBF03B73EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
-		C827ED429376CE99D9159A3314338D7E /* SPAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9586A3056853568200EE9E97B212B06 /* SPAlertController-dummy.m */; };
 		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
-		CC6851CC7B44EEDB14E24F1B88B36800 /* UIWindow+HHHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D478929F3EE389374FA6B21163F436B /* UIWindow+HHHelper.m */; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = AC35E46D997D0FB08F95534F3B99354A /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D4E4BA35BEE5C52588EF2B0B03F15D2C /* HHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B80EB9FE246317F7E5D3885E20096AF8 /* HHKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D716FB1C45DFDF218FF9E1B492C70AF1 /* MBProgressHUD+HHTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B7F85B1C76800985332E4B90C57B79 /* MBProgressHUD+HHTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB3D88D72F14FCD2B73528E69F74E1F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1473B97FBDC8810E011A00DC9C24BDBC /* QuartzCore.framework */; };
+		D7C2093B3E4A3DB9754AA0080D802597 /* MBProgressHUD+HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C59D02A38478C837E7FCC4111BA679 /* MBProgressHUD+HHTool.m */; };
+		DBD5BDCE9EE951DDF7B5BD6C863BC86D /* HHKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E111724AD1867941749E88F4257CC9B /* HHKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0C57EB6FD6F266F8190A7949BF42479 /* Pods-HHKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C00AE68B0EF10CD79B4B8618AFBB220 /* Pods-HHKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3A217C0AE835B50744E665C3B43EA9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */; };
+		E58B9A448106E3BD6864A1FE4F5F77E2 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE08924C8CB15F61EE7DF753C1EADF51 /* MBProgressHUD.framework */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B90631298E89145DD34370F1F8998AA /* FBSnapshotTestCasePlatform.m */; };
-		EB2FFFD5FF8A7D8970423AF0AA0AA734 /* HHKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C7CEC169C1F053DAC07A72FA61E1951A /* HHKit.bundle */; };
+		F000F18D97D40C6CED6B8109E19B3389 /* UIView+HHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CE090D20D15EF3A333415CFF3AB9BA /* UIView+HHFrame.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 3207F7D2AE26A8CB5B0D3A9B6D3B4C12 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ECFA828241408581FF8D838D2CE518 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFE010BA54F3403BE83B8A5A054C5232 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE08924C8CB15F61EE7DF753C1EADF51 /* MBProgressHUD.framework */; };
+		FBFE3580F424575EC1AAD526F01EF6A8 /* HHPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75AFAE401DC161D1FE2E11E3468E87 /* HHPathTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1F4EA2CC698A563E7F5A60B82C7E18CF /* PBXContainerItemProxy */ = {
+		0B660966858287730335BB24B27D0317 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A80A4D6B185BA43BC06122FED0C15F94;
 			remoteInfo = Toast;
 		};
-		21CC250995CC9BE4763BB8B8B62FAA54 /* PBXContainerItemProxy */ = {
+		25ED7852965253A5964AAD0CBC31550E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
+		26EFA3EBDFD66129F5DE7FBF1874C030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9FD3DC67114E77A9D7C31D60926CF33;
+			remoteInfo = SPAlertController;
+		};
+		3B20A206A423736F36CD62FDD353FA1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
-		2FD8AA393E19430CFF6FA15CA01D366F /* PBXContainerItemProxy */ = {
+		53103718340ACAEF5AB8FED52BBE65DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 362D4961566A2C533774D1268CD5953F;
-			remoteInfo = "Pods-HHKit_Example";
+			remoteGlobalIDString = B9FD3DC67114E77A9D7C31D60926CF33;
+			remoteInfo = SPAlertController;
 		};
-		3679DCE659A657F6EAF6B1CDFB197BD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
-			remoteInfo = MBProgressHUD;
-		};
-		588A6BAAEE700962C337954D4F397675 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
-			remoteInfo = MBProgressHUD;
-		};
-		5CCF42B2AF6B185866098C26089E966A /* PBXContainerItemProxy */ = {
+		69D985C40E8D098259473356EAE8A871 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A80A4D6B185BA43BC06122FED0C15F94;
 			remoteInfo = Toast;
 		};
-		715D461232E982A15EAE9E3373A34CEB /* PBXContainerItemProxy */ = {
+		7368A5F71F016338809226E8EC8D7005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9FD3DC67114E77A9D7C31D60926CF33;
-			remoteInfo = SPAlertController;
+			remoteGlobalIDString = 362D4961566A2C533774D1268CD5953F;
+			remoteInfo = "Pods-HHKit_Example";
 		};
-		89DACCB3E275AFBDE966A44943F1C96F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9FD3DC67114E77A9D7C31D60926CF33;
-			remoteInfo = SPAlertController;
-		};
-		CDB9FFD3212635E3583F12B73E5BB959 /* PBXContainerItemProxy */ = {
+		A6ABA2BD0779C4D02C21FA7DBB1AC86B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DE8145D5F05D43B90DE251E3A0DA0C24;
 			remoteInfo = HHKit;
 		};
+		B00C40023012BF1C256996596AAF7E23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00CE090D20D15EF3A333415CFF3AB9BA /* UIView+HHFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+HHFrame.m"; path = "HHKit/Classes/UIView+HHFrame.m"; sourceTree = "<group>"; };
 		024B28C993E83A1547D10F69D81FDFD5 /* SPAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02853A8FD2FE7CA541E7180A4162BEAE /* HHAlertTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHAlertTool.m; path = HHKit/Classes/HHAlertTool.m; sourceTree = "<group>"; };
 		04BFFDA513914FF38578217FE30AFD54 /* Toast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Info.plist"; sourceTree = "<group>"; };
+		04C59D02A38478C837E7FCC4111BA679 /* MBProgressHUD+HHTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+HHTool.m"; path = "HHKit/Classes/MBProgressHUD+HHTool.m"; sourceTree = "<group>"; };
 		04DBB90D1F6CBA26881A5B9C478248FA /* SPAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SPAlertController-Info.plist"; sourceTree = "<group>"; };
 		0581097FC1C268667B4A392D7EB3DA8E /* SPAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B0045C893EF9CB7B69267C2F9DEDB08 /* HHPathTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHPathTool.h; path = HHKit/Classes/HHPathTool.h; sourceTree = "<group>"; };
 		0B03EB47FDEE5970B2238518C3DF3BC4 /* SPAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPAlertController.m; path = SPAlertController/SPAlertController.m; sourceTree = "<group>"; };
 		0B90631298E89145DD34370F1F8998AA /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		0C00AE68B0EF10CD79B4B8618AFBB220 /* Pods-HHKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		0EDB615727CC20DBFB7F3923E921EF6F /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		139ADED29AF7BB6AD11FD184F16FE6B8 /* HHToastTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHToastTool.m; path = HHKit/Classes/HHToastTool.m; sourceTree = "<group>"; };
+		0FC1F0DD7D48D5C102A5D2C26DC6607D /* HHAlertCustomTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHAlertCustomTool.m; path = HHKit/Classes/HHAlertCustomTool.m; sourceTree = "<group>"; };
 		1473B97FBDC8810E011A00DC9C24BDBC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1C8F44240A447F21538504D5067FADDC /* HHKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHKit-dummy.m"; sourceTree = "<group>"; };
 		1E051B3A47457E11D900965FDC820EAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		21BF522C888EF478F0E309BE181AC4FC /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		21D21D171047CA7D7042F290E8887B8B /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		223C55BEDF0DEA8A4C14180CC608B0D0 /* Pods-HHKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHKit_Example-dummy.m"; sourceTree = "<group>"; };
+		237FCED68A20CE1B4DAD73CF4CEEF4A8 /* HHConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHConfiguration.m; path = HHKit/Classes/HHConfiguration.m; sourceTree = "<group>"; };
 		23FFE0E170768EDC71B600FD305D82FB /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		2446A90E3ABB02548E38CA2135DC4977 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		24B7F85B1C76800985332E4B90C57B79 /* MBProgressHUD+HHTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+HHTool.h"; path = "HHKit/Classes/MBProgressHUD+HHTool.h"; sourceTree = "<group>"; };
 		27542A00B5B4D7C8A501714C76CA2AE1 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		27EC9AB70F4A7A5694027BBAC3C528C6 /* HHKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HHKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		287130B9AEA3BC6A609E20EF25773922 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2CBA00B2401D2FD4AAEFB25C1E0F5176 /* Pods-HHKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HHKit_Tests.modulemap"; sourceTree = "<group>"; };
 		2D61066531DAE5A6546DBB6E2F1FA9AA /* Pods-HHKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		31C933BB0C99DD1E5B06879E781AFFBE /* UIWindow+HHHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+HHHelper.h"; path = "HHKit/Classes/UIWindow+HHHelper.h"; sourceTree = "<group>"; };
 		3207F7D2AE26A8CB5B0D3A9B6D3B4C12 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		343BC95C082C6397CCBAEED5542E85B9 /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/UIView+Toast.h"; sourceTree = "<group>"; };
-		352DBB3925516FB0006D2A42 /* UIView+HHFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+HHFrame.h"; path = "HHKit/Classes/UIView+HHFrame.h"; sourceTree = "<group>"; };
-		352DBB3A25516FB0006D2A42 /* UIView+HHFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+HHFrame.m"; path = "HHKit/Classes/UIView+HHFrame.m"; sourceTree = "<group>"; };
+		3459652BE2FF00B152436B75E8F1496A /* HHAlertCustomTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHAlertCustomTool.h; path = HHKit/Classes/HHAlertCustomTool.h; sourceTree = "<group>"; };
+		3780CC87B5A63B3B163B021F1B6E9651 /* HHKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHKit-prefix.pch"; sourceTree = "<group>"; };
 		379DB671911727899426CE9B27EEE829 /* Toast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-umbrella.h"; sourceTree = "<group>"; };
 		37EF21499AD70F11C2260CF447FDAFB9 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		3B75AFAE401DC161D1FE2E11E3468E87 /* HHPathTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHPathTool.m; path = HHKit/Classes/HHPathTool.m; sourceTree = "<group>"; };
 		3C140982C775D5697D527201EACC9120 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		3E111724AD1867941749E88F4257CC9B /* HHKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKit.h; path = HHKit/Classes/HHKit.h; sourceTree = "<group>"; };
 		3F17F06FE99E9523C6F0E37951B5CE2C /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		440BAB375E74ECCC2E9E5BFDF39224B5 /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
 		4437E578B7F03B1B091CD5F5720636C9 /* Toast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.release.xcconfig; sourceTree = "<group>"; };
 		44A9D8F5B08370C73734247CEAAEC4A3 /* SPAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPAlertController.h; path = SPAlertController/SPAlertController.h; sourceTree = "<group>"; };
+		44DE87D1EDB76F0DE315E118F15B1CC9 /* HHKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HHKit.modulemap; sourceTree = "<group>"; };
 		4CC301BD49EF3C6562CD843A0FD6FE8C /* Pods-HHKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		4D1CE42EE698BACEDD9FF66BFEFBC6C3 /* NSBundle+HHKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+HHKit.h"; path = "HHKit/Classes/NSBundle+HHKit.h"; sourceTree = "<group>"; };
-		4D5F0FA207753E42A252CD9C52FB9C94 /* HHAlertCustomTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHAlertCustomTool.m; path = HHKit/Classes/HHAlertCustomTool.m; sourceTree = "<group>"; };
-		4F9E4B25B1D6CA11E3236F1AA4A96D0B /* HHToastTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHToastTool.h; path = HHKit/Classes/HHToastTool.h; sourceTree = "<group>"; };
-		52204638F1E6A22467AEC36B4D831FC4 /* HHKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKit.debug.xcconfig; sourceTree = "<group>"; };
+		524817FFEED7FFE713921FDC5697D5A7 /* UIView+HHFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+HHFrame.h"; path = "HHKit/Classes/UIView+HHFrame.h"; sourceTree = "<group>"; };
+		529E38E0BE85631C2C8AB1C43BF9A4D7 /* HHKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKit.debug.xcconfig; sourceTree = "<group>"; };
 		53F69B44AF932B4DCAA7B92994EE553D /* UIView+Toast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Toast/UIView+Toast.m"; sourceTree = "<group>"; };
-		553587C0AB8C15F6591BB08E6C25805A /* NSBundle+HHKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+HHKit.m"; path = "HHKit/Classes/NSBundle+HHKit.m"; sourceTree = "<group>"; };
 		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57BEE93822E2F6F3AC4823F82BCFF70F /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		584683756B99C47078C94085FCC3FA36 /* HHKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HHKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,29 +198,33 @@
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDDC60875317B3BD8DBC07164C1DD9B /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		653F70431BD3B81CE5F49588C516EB52 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		6AF31A91710EDD5E31A65602BB8BCD95 /* UIWindow+HHHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+HHHelper.m"; path = "HHKit/Classes/UIWindow+HHHelper.m"; sourceTree = "<group>"; };
 		6B10AE90644AF3F4FC90C71D0C993A85 /* Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = "Toast-Framework/Toast.h"; sourceTree = "<group>"; };
 		73D96E09A5FCE46E465A0AC7A61854F3 /* SPAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPAlertController-prefix.pch"; sourceTree = "<group>"; };
 		746CD6B282A281505E501879DC1A23DD /* Pods-HHKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKit_Example-Info.plist"; sourceTree = "<group>"; };
 		74ECFA828241408581FF8D838D2CE518 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		76047A9E65C42AC1F14F52E391397C19 /* SPAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SPAlertController.modulemap; sourceTree = "<group>"; };
 		76405F5CFA4E6FE7533486DC60F4B405 /* Pods-HHKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		7A4F078A3F3BD1A5F256001B4FDC56BD /* HHKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HHKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		7DA6D2C4FB17D1F87410A0355768AF5E /* HHAlertTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHAlertTool.h; path = HHKit/Classes/HHAlertTool.h; sourceTree = "<group>"; };
 		809DCA9733B820B9B2CCA0010C63B375 /* Pods-HHKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		80DB001E9B83EF05637835C1C9AD9955 /* HHAlertTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHAlertTool.h; path = HHKit/Classes/HHAlertTool.h; sourceTree = "<group>"; };
+		84C1D9A5846AEC03ADCD49645FAC1637 /* NSBundle+HHKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+HHKit.m"; path = "HHKit/Classes/NSBundle+HHKit.m"; sourceTree = "<group>"; };
 		886EE0A552AC521F6B25AC7CF0C88A24 /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		88ABF29A07DB74F502B6CAEA3B4A4EE7 /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
+		89094FCAFBAA019271CE3299E4ACD627 /* NSBundle+HHKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+HHKit.h"; path = "HHKit/Classes/NSBundle+HHKit.h"; sourceTree = "<group>"; };
 		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C545E2DCBE918E1B4EC7B1F804B03D2 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		8F7B2C7C30DAF9A349E30B63AB449860 /* Pods-HHKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9068A772A7B16E90E40574C6B0196851 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		911AF9C5FD29EE29E7CDDF8DC0CFA4D7 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		962EF12B4B67323AC5C4EE0021F0EED3 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		9634D156BAF3EB7BD432AC2AC01BB697 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		967E496033BE45FB2DF966FDB661F284 /* SPAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPAlertController.release.xcconfig; sourceTree = "<group>"; };
+		994CDAC3B256828C450C972DD3B4136A /* UIWindow+HHHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+HHHelper.h"; path = "HHKit/Classes/UIWindow+HHHelper.h"; sourceTree = "<group>"; };
 		99FDDB8653477F56E0B5DE295096C1F8 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		9C58E48EB25638400313E721C9119EFD /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		9D478929F3EE389374FA6B21163F436B /* UIWindow+HHHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+HHHelper.m"; path = "HHKit/Classes/UIWindow+HHHelper.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A09395783412FF22388409BDD72D5BC1 /* HHAlertCustomTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHAlertCustomTool.h; path = HHKit/Classes/HHAlertCustomTool.h; sourceTree = "<group>"; };
+		A0C57610436AC8C0808D36C726EAFB48 /* HHAlertTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHAlertTool.m; path = HHKit/Classes/HHAlertTool.m; sourceTree = "<group>"; };
+		A15709CC8D73D3A6ED57AFB0E0C56CF4 /* HHToastTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHToastTool.m; path = HHKit/Classes/HHToastTool.m; sourceTree = "<group>"; };
 		A50B199EBC83296A497D752114A8EB91 /* Pods-HHKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1A17B941F9D1F0C5297F1B06000820 /* Pods-HHKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AC35E46D997D0FB08F95534F3B99354A /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
@@ -221,70 +232,41 @@
 		B000BAF0EBAD3066DCA92D4F7F0F17FE /* Pods_HHKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07915D5D7A85742366FF76B77CB2402 /* Pods-HHKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B4427C664012AD43F31DB63F12A9189C /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7DD7C42E7809E00BCAB36559EAD7FEB /* HHKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHKit-dummy.m"; sourceTree = "<group>"; };
-		B80EB9FE246317F7E5D3885E20096AF8 /* HHKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKit.h; path = HHKit/Classes/HHKit.h; sourceTree = "<group>"; };
-		B9F1FB27AAE17EB0D32FE7D4FF153128 /* HHKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HHKit.modulemap; sourceTree = "<group>"; };
+		B62153AA7288B9A810C94D4995F27463 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C1243802F767863244742BDCE8E64487 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		C1BE19D83491574665FF1AF62ED4FB9D /* SPAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SPAlertController-umbrella.h"; sourceTree = "<group>"; };
 		C3588BB31328556DFC1A3029EDA47FD6 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		C438EFC90A26CA26B646ED32059A9FD0 /* Pods_HHKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7CEC169C1F053DAC07A72FA61E1951A /* HHKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HHKit.bundle; path = HHKit/Assets/HHKit.bundle; sourceTree = "<group>"; };
 		C9EF4F43F8426997C6CA34CE75554A6E /* Pods-HHKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D1A2FEB7F1B07AE8413A674E1669BD9E /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		D2534DD5F5EEB891DAEF23E7E370264F /* Pods-HHKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		D35C52C5E33F7D5C19D27C5F64336039 /* HHToastTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHToastTool.h; path = HHKit/Classes/HHToastTool.h; sourceTree = "<group>"; };
+		D38DCD0F7FB3B0A49FD36CAC4B3906FF /* HHKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKit.release.xcconfig; sourceTree = "<group>"; };
 		D4890E75C9BD1E24D95C89650FAF4FA4 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		D4CBBB33476DCF1F64B45AA2C59DBB53 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		D70DCA0BCE1AEC6A7ECBB42790A31EFA /* Pods-HHKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D7A9E153285A475D6098D21E3D6E908F /* HHKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHKit-umbrella.h"; sourceTree = "<group>"; };
+		D8D30F2176AF7C9471C1DE0982983C02 /* HHKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HHKit-Info.plist"; sourceTree = "<group>"; };
 		D95633707DB4B170C926C15E420F42BF /* Toast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Toast.modulemap; sourceTree = "<group>"; };
+		DB21AAAE313A9A7F3BAC92265F2BE1A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DF641C53948344F4C78450EA075C9DAF /* SPAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPAlertController.debug.xcconfig; sourceTree = "<group>"; };
 		E04658C72E8968556719F7F30EBE1187 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		E07FAB38C906D7BAA248C0FDEA5DACC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EB41F3E12EBCC4F856EB6F49682E1114 /* HHKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKit.release.xcconfig; sourceTree = "<group>"; };
+		E840F664BE23CE8B6487F38943BD9781 /* HHKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HHKit.bundle; path = HHKit/Assets/HHKit.bundle; sourceTree = "<group>"; };
+		EA0B73B5F7BB4D0BAF376DB2A8105163 /* HHConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHConfiguration.h; path = HHKit/Classes/HHConfiguration.h; sourceTree = "<group>"; };
 		EB6035334B6CF3A2699689E214A2F715 /* Pods-HHKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EB707D9CA380B88E2CF5953A35E1E1B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		EF7E0B7BF3035731A87958CBA6F0CF07 /* HHKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHKit-prefix.pch"; sourceTree = "<group>"; };
+		ECD480FB2E418A5687F6CB6B7D53F144 /* HHKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHKit-umbrella.h"; sourceTree = "<group>"; };
 		F30BC44C5EDA89A0E918B7F2858D1076 /* Pods-HHKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HHKit_Example.modulemap"; sourceTree = "<group>"; };
+		F410DB492C315B9B066758A2492CB31D /* MBProgressHUD+HHTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+HHTool.h"; path = "HHKit/Classes/MBProgressHUD+HHTool.h"; sourceTree = "<group>"; };
 		F65322882E1FAD45745F446C52B0B2AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		F76159D57D0673598F646F8607CF96D4 /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		F798A290091E5C44FB9D676F7212B84A /* Pods-HHKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F9586A3056853568200EE9E97B212B06 /* SPAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SPAlertController-dummy.m"; sourceTree = "<group>"; };
 		F9D2B9446D7A5EC50A32229817995E53 /* Toast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.debug.xcconfig; sourceTree = "<group>"; };
-		FC1B092EB415632470A4B8090EE9AA7A /* HHKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HHKit-Info.plist"; sourceTree = "<group>"; };
-		FC2BDF448090C3E1D25E4100D89C18AC /* MBProgressHUD+HHTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+HHTool.m"; path = "HHKit/Classes/MBProgressHUD+HHTool.m"; sourceTree = "<group>"; };
+		FA87EAC0A89203C316816494C2A658E6 /* HHDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHDefine.h; path = HHKit/Classes/HHDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37753193A04236D1A71D32007F6B04BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45133BD8CEAFE9F7EF7DBD18AD2E92BE /* Foundation.framework in Frameworks */,
-				DB3D88D72F14FCD2B73528E69F74E1F0 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F3B4489AD2DC871AD0C662F7959533E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FC725FF3CD1BD6FB96FDA36D8137BCD /* CoreGraphics.framework in Frameworks */,
-				9415BB6453C61ED02054F1EC6EE6743D /* Foundation.framework in Frameworks */,
-				2C595DC192E58670CAAD9D2A85787864 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6BBF36137B6ADDB3D372DA0CA554A0D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5902566EED9E2B337E41DC188AF35ECA /* Foundation.framework in Frameworks */,
-				FFE010BA54F3403BE83B8A5A054C5232 /* MBProgressHUD.framework in Frameworks */,
-				28A3BC89C0D724506B9C9AA70E751E67 /* SPAlertController.framework in Frameworks */,
-				4DBAE841AC6732AA802BA86B668957E8 /* Toast.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8EB44C9281C3B9048B3FB7E72E3166A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,11 +275,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		974CF727E070C808A938E98070A5FCA7 /* Frameworks */ = {
+		9C462545473E6E9B8DE5BE0DEDD6F323 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E4CCFBC9B104A7BAA3C08F545080F61 /* Foundation.framework in Frameworks */,
+				420E8734BD08AA1A0EB49C0CEC0C84E5 /* Foundation.framework in Frameworks */,
+				38BF56011EAC193D14C7E95A8F93EEE8 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94A473A6590931F2062FD2A6DCCD919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A217C0AE835B50744E665C3B43EA9E /* Foundation.framework in Frameworks */,
+				E58B9A448106E3BD6864A1FE4F5F77E2 /* MBProgressHUD.framework in Frameworks */,
+				547F72E60B8BF88B82C7A08C9FBAAB2F /* SPAlertController.framework in Frameworks */,
+				28B034B470D52BED3EFF09369A6BA756 /* Toast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3E4194048B8C01E1C63B75051ABCFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACB59115D5ADE0D440082331E2360B1 /* CoreGraphics.framework in Frameworks */,
+				10E0FF5CF0EF850ADE26F8DFD6600CB9 /* Foundation.framework in Frameworks */,
+				52A5CDEBBBB4354089FECF9DCCDCDFD8 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B848B5BE83EF445161471ACDA114D5F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C822A5CE26938902B3B6EA9D5D75E6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C00DAAC81F9E0DE2A065658862C1D87 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +468,31 @@
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
+		7D880CFB834A6C80591C1F4C2A683FE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44DE87D1EDB76F0DE315E118F15B1CC9 /* HHKit.modulemap */,
+				1C8F44240A447F21538504D5067FADDC /* HHKit-dummy.m */,
+				D8D30F2176AF7C9471C1DE0982983C02 /* HHKit-Info.plist */,
+				3780CC87B5A63B3B163B021F1B6E9651 /* HHKit-prefix.pch */,
+				ECD480FB2E418A5687F6CB6B7D53F144 /* HHKit-umbrella.h */,
+				529E38E0BE85631C2C8AB1C43BF9A4D7 /* HHKit.debug.xcconfig */,
+				D38DCD0F7FB3B0A49FD36CAC4B3906FF /* HHKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HHKit";
+			sourceTree = "<group>";
+		};
+		809688CE5A7F8D2DF270735BE497F7AD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7A4F078A3F3BD1A5F256001B4FDC56BD /* HHKit.podspec */,
+				DB21AAAE313A9A7F3BAC92265F2BE1A3 /* LICENSE */,
+				B62153AA7288B9A810C94D4995F27463 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		8C8E8B853B49A804FBE692F863D068BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,26 +521,19 @@
 			path = "Target Support Files/Pods-HHKit_Tests";
 			sourceTree = "<group>";
 		};
-		AC952B5E8DD261107D7A187105A8F02F /* Support Files */ = {
+		BC99817189ACE22BDD079DB12C97136B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B9F1FB27AAE17EB0D32FE7D4FF153128 /* HHKit.modulemap */,
-				B7DD7C42E7809E00BCAB36559EAD7FEB /* HHKit-dummy.m */,
-				FC1B092EB415632470A4B8090EE9AA7A /* HHKit-Info.plist */,
-				EF7E0B7BF3035731A87958CBA6F0CF07 /* HHKit-prefix.pch */,
-				D7A9E153285A475D6098D21E3D6E908F /* HHKit-umbrella.h */,
-				52204638F1E6A22467AEC36B4D831FC4 /* HHKit.debug.xcconfig */,
-				EB41F3E12EBCC4F856EB6F49682E1114 /* HHKit.release.xcconfig */,
+				F12FA1257E7A6F1AEF4F00FBB872237E /* HHKit */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HHKit";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D9C6105E0BAE554E9ED7D948BCE4A96F /* Development Pods */,
+				BC99817189ACE22BDD079DB12C97136B /* Development Pods */,
 				8C8E8B853B49A804FBE692F863D068BF /* Frameworks */,
 				330C12A76604A8819F2A44960AC6ED00 /* Pods */,
 				FA544CE2F3B1D69B5873AFDA4176E12A /* Products */,
@@ -526,24 +556,6 @@
 			path = "../Target Support Files/SPAlertController";
 			sourceTree = "<group>";
 		};
-		D9C6105E0BAE554E9ED7D948BCE4A96F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F6546719DF1E63A148F6CE30BBCA980B /* HHKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		DF3D94AE951933DCD686964EB07F7074 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				27EC9AB70F4A7A5694027BBAC3C528C6 /* HHKit.podspec */,
-				9634D156BAF3EB7BD432AC2AC01BB697 /* LICENSE */,
-				287130B9AEA3BC6A609E20EF25773922 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		EC31861D631B1A8CFE2565C3C3C3377D /* FBSnapshotTestCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,27 +566,32 @@
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		F6546719DF1E63A148F6CE30BBCA980B /* HHKit */ = {
+		F12FA1257E7A6F1AEF4F00FBB872237E /* HHKit */ = {
 			isa = PBXGroup;
 			children = (
-				352DBB3925516FB0006D2A42 /* UIView+HHFrame.h */,
-				352DBB3A25516FB0006D2A42 /* UIView+HHFrame.m */,
-				A09395783412FF22388409BDD72D5BC1 /* HHAlertCustomTool.h */,
-				4D5F0FA207753E42A252CD9C52FB9C94 /* HHAlertCustomTool.m */,
-				80DB001E9B83EF05637835C1C9AD9955 /* HHAlertTool.h */,
-				02853A8FD2FE7CA541E7180A4162BEAE /* HHAlertTool.m */,
-				C7CEC169C1F053DAC07A72FA61E1951A /* HHKit.bundle */,
-				B80EB9FE246317F7E5D3885E20096AF8 /* HHKit.h */,
-				4F9E4B25B1D6CA11E3236F1AA4A96D0B /* HHToastTool.h */,
-				139ADED29AF7BB6AD11FD184F16FE6B8 /* HHToastTool.m */,
-				24B7F85B1C76800985332E4B90C57B79 /* MBProgressHUD+HHTool.h */,
-				FC2BDF448090C3E1D25E4100D89C18AC /* MBProgressHUD+HHTool.m */,
-				4D1CE42EE698BACEDD9FF66BFEFBC6C3 /* NSBundle+HHKit.h */,
-				553587C0AB8C15F6591BB08E6C25805A /* NSBundle+HHKit.m */,
-				31C933BB0C99DD1E5B06879E781AFFBE /* UIWindow+HHHelper.h */,
-				9D478929F3EE389374FA6B21163F436B /* UIWindow+HHHelper.m */,
-				DF3D94AE951933DCD686964EB07F7074 /* Pod */,
-				AC952B5E8DD261107D7A187105A8F02F /* Support Files */,
+				3459652BE2FF00B152436B75E8F1496A /* HHAlertCustomTool.h */,
+				0FC1F0DD7D48D5C102A5D2C26DC6607D /* HHAlertCustomTool.m */,
+				7DA6D2C4FB17D1F87410A0355768AF5E /* HHAlertTool.h */,
+				A0C57610436AC8C0808D36C726EAFB48 /* HHAlertTool.m */,
+				EA0B73B5F7BB4D0BAF376DB2A8105163 /* HHConfiguration.h */,
+				237FCED68A20CE1B4DAD73CF4CEEF4A8 /* HHConfiguration.m */,
+				FA87EAC0A89203C316816494C2A658E6 /* HHDefine.h */,
+				E840F664BE23CE8B6487F38943BD9781 /* HHKit.bundle */,
+				3E111724AD1867941749E88F4257CC9B /* HHKit.h */,
+				0B0045C893EF9CB7B69267C2F9DEDB08 /* HHPathTool.h */,
+				3B75AFAE401DC161D1FE2E11E3468E87 /* HHPathTool.m */,
+				D35C52C5E33F7D5C19D27C5F64336039 /* HHToastTool.h */,
+				A15709CC8D73D3A6ED57AFB0E0C56CF4 /* HHToastTool.m */,
+				F410DB492C315B9B066758A2492CB31D /* MBProgressHUD+HHTool.h */,
+				04C59D02A38478C837E7FCC4111BA679 /* MBProgressHUD+HHTool.m */,
+				89094FCAFBAA019271CE3299E4ACD627 /* NSBundle+HHKit.h */,
+				84C1D9A5846AEC03ADCD49645FAC1637 /* NSBundle+HHKit.m */,
+				524817FFEED7FFE713921FDC5697D5A7 /* UIView+HHFrame.h */,
+				00CE090D20D15EF3A333415CFF3AB9BA /* UIView+HHFrame.m */,
+				994CDAC3B256828C450C972DD3B4136A /* UIWindow+HHHelper.h */,
+				6AF31A91710EDD5E31A65602BB8BCD95 /* UIWindow+HHHelper.m */,
+				809688CE5A7F8D2DF270735BE497F7AD /* Pod */,
+				7D880CFB834A6C80591C1F4C2A683FE0 /* Support Files */,
 			);
 			name = HHKit;
 			path = ../..;
@@ -626,18 +643,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37A3AF2AA501216555DD9C4EF68A82AB /* Headers */ = {
+		16F60C33BCBDCDC3CB7CADE25FC7D575 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B938F965E49D9174F43084F9BE5A0EC3 /* HHAlertCustomTool.h in Headers */,
-				1CAF361221E282F4B502A5F53490979A /* HHAlertTool.h in Headers */,
-				1235D3929464E2FBC015C00C6F35FBB9 /* HHKit-umbrella.h in Headers */,
-				D4E4BA35BEE5C52588EF2B0B03F15D2C /* HHKit.h in Headers */,
-				AB8D078FA064D8F42F013DD62DF9B7B7 /* HHToastTool.h in Headers */,
-				D716FB1C45DFDF218FF9E1B492C70AF1 /* MBProgressHUD+HHTool.h in Headers */,
-				0A74D30AEE56FBD0B0EAA760D891DB2A /* NSBundle+HHKit.h in Headers */,
-				227347448170ED5210375EE07D0DEEEF /* UIWindow+HHHelper.h in Headers */,
+				55256515762E1F74EE133F3D8703B3AD /* SPAlertController-umbrella.h in Headers */,
+				5715AF7A5320BDB85E64847E35C855F2 /* SPAlertController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B4796AD8606D75A2EA3707CF686FFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B3FCB2F6258E7D57D7611ABCFFB0F2 /* Toast-umbrella.h in Headers */,
+				B4D84B8084FE30FB23C3F97DF6051737 /* Toast.h in Headers */,
+				212F126868396D879E5ACAF1E63AFCF3 /* UIView+Toast.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +677,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		917E0D779045FF5423A805F6AAFD9F62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7C133AFB3A19E3B280087B8E377816 /* MBProgressHUD-umbrella.h in Headers */,
+				54C9918585DB3B855910C4B4F75B7396 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A226F81E8B595E980C0A4ED1ECBB73B1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,31 +694,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA0A22CD4435BA10C348A84C9A58FFF5 /* Headers */ = {
+		C67260714B7FBE21A29A7A968096CD56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1398F7F4CF00DB55ABDEB7426BD1DEB /* SPAlertController-umbrella.h in Headers */,
-				B8088478CF9F65DB45E3913E4AF6AD8F /* SPAlertController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BB8E7B674D2E5361A7246E74EE118BE8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09D8B140280858D9C1D27B3EF163FB42 /* MBProgressHUD-umbrella.h in Headers */,
-				AACEE6C1E7C131C74F9EF3554303F030 /* MBProgressHUD.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7B0D2CEDB41C06974228BAADA943E66 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19D2BC10CA3EE833A8746CD9E7C5F459 /* Toast-umbrella.h in Headers */,
-				8AE5B9AAA4BD0F6EA7071B7FBE008ABC /* Toast.h in Headers */,
-				2FBF1DE47308F033E76107E67494DCCC /* UIView+Toast.h in Headers */,
+				A18F20EFA1F0ABC571A154F20CF5E2E0 /* HHAlertCustomTool.h in Headers */,
+				0F879310FA6A2BDAC22BCC9ECA02846D /* HHAlertTool.h in Headers */,
+				6D808CA2CD68A042BFA6151DD61C1896 /* HHConfiguration.h in Headers */,
+				956CF4BBCF69010AF34F2371840C9491 /* HHDefine.h in Headers */,
+				20D4CF3F3A84CEEC61887B1C310C67E8 /* HHKit-umbrella.h in Headers */,
+				DBD5BDCE9EE951DDF7B5BD6C863BC86D /* HHKit.h in Headers */,
+				A327CBE46CF40295ABC6F05840841478 /* HHPathTool.h in Headers */,
+				9C01EA00D96A4E4C1BFF000DEA25F30D /* HHToastTool.h in Headers */,
+				2D9AC63EC75E7CBFFC5CE34F38226920 /* MBProgressHUD+HHTool.h in Headers */,
+				46E4CE72D350DD6C8474756E295534E8 /* NSBundle+HHKit.h in Headers */,
+				4C577FB78F8E0E2B50AF1B4898CB887E /* UIView+HHFrame.h in Headers */,
+				A44B0F12920AA8CD998B7F901E033397 /* UIWindow+HHHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,10 +728,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				6F9EDF56E3B2C9E5DD948C0467234970 /* PBXTargetDependency */,
-				43C612BF1BA25F0CAD584FBC9BF8B7C3 /* PBXTargetDependency */,
-				062CD0F08B111FA1F099CCBEA45DF12B /* PBXTargetDependency */,
-				91CD4AE9F06974CDA6621E54079DDD1B /* PBXTargetDependency */,
+				CA8A594A0E3EA57AC827114544208B74 /* PBXTargetDependency */,
+				C6D7AB4095164C98759F9EC73209A89C /* PBXTargetDependency */,
+				45E4FD6FFB9BE3CD2BD539328B5DFD7D /* PBXTargetDependency */,
+				38B35E52B498FDB0D2531D1031529A61 /* PBXTargetDependency */,
 			);
 			name = "Pods-HHKit_Example";
 			productName = "Pods-HHKit_Example";
@@ -719,12 +740,12 @@
 		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD5CF89552172F1D5F41A0304939BFA7 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildConfigurationList = BB9303DA2DED3952857C3280E8D12349 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
 			buildPhases = (
-				BB8E7B674D2E5361A7246E74EE118BE8 /* Headers */,
-				D5BAFCEF78088001C9D0811B6CEF714F /* Sources */,
-				5F3B4489AD2DC871AD0C662F7959533E /* Frameworks */,
-				FB5969CD7ACB9F9CF6DCA3F37130530C /* Resources */,
+				917E0D779045FF5423A805F6AAFD9F62 /* Headers */,
+				0327DC7BF626A13802169CD82C58292F /* Sources */,
+				AB3E4194048B8C01E1C63B75051ABCFA /* Frameworks */,
+				F2EFF4FC726ADE36B70A2133D5805035 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -747,8 +768,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				1BE3521804268BC6BFAACEBACB760B3B /* PBXTargetDependency */,
-				CF6DBF61951E3CD55A3C944BFC1BB6BC /* PBXTargetDependency */,
+				8492E1CFA79630EDE8AC50856BEAF636 /* PBXTargetDependency */,
+				645644A2B11C5970CC9D0A2AB74EAEF0 /* PBXTargetDependency */,
 			);
 			name = "Pods-HHKit_Tests";
 			productName = "Pods-HHKit_Tests";
@@ -775,12 +796,12 @@
 		};
 		A80A4D6B185BA43BC06122FED0C15F94 /* Toast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E434B313744687F9799E655407ADE9F /* Build configuration list for PBXNativeTarget "Toast" */;
+			buildConfigurationList = F741911A12D731A11DF7D70A773D981D /* Build configuration list for PBXNativeTarget "Toast" */;
 			buildPhases = (
-				C7B0D2CEDB41C06974228BAADA943E66 /* Headers */,
-				086224B5BC4BE74240C40DD2C8659364 /* Sources */,
-				37753193A04236D1A71D32007F6B04BF /* Frameworks */,
-				3CD0FD335106FC330895C2471CA64AE5 /* Resources */,
+				29B4796AD8606D75A2EA3707CF686FFD /* Headers */,
+				480D869898344EE2CCA74216908C6082 /* Sources */,
+				9C462545473E6E9B8DE5BE0DEDD6F323 /* Frameworks */,
+				9928D46FF71A37AD8356D1BFAA433803 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -793,12 +814,12 @@
 		};
 		B9FD3DC67114E77A9D7C31D60926CF33 /* SPAlertController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAB0F06A9E75A4AD0D492BD7A9BFA4FD /* Build configuration list for PBXNativeTarget "SPAlertController" */;
+			buildConfigurationList = A0B77F82A0CC019CE3AF9A6AAE7AFD75 /* Build configuration list for PBXNativeTarget "SPAlertController" */;
 			buildPhases = (
-				AA0A22CD4435BA10C348A84C9A58FFF5 /* Headers */,
-				22B976757EEFAD2F9629B1D0A128979A /* Sources */,
-				974CF727E070C808A938E98070A5FCA7 /* Frameworks */,
-				4D6ADECC749D2C30003C00B65ED08AD4 /* Resources */,
+				16F60C33BCBDCDC3CB7CADE25FC7D575 /* Headers */,
+				1367A4D7CC2B8CE4C503B690373BFAAB /* Sources */,
+				C822A5CE26938902B3B6EA9D5D75E6E3 /* Frameworks */,
+				6FDF71BCF3A77407BD09D2E1DE647CB0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -811,19 +832,19 @@
 		};
 		DE8145D5F05D43B90DE251E3A0DA0C24 /* HHKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 629BCA853958AF72924A683403664562 /* Build configuration list for PBXNativeTarget "HHKit" */;
+			buildConfigurationList = 77B869477655C8557385F220507E85E2 /* Build configuration list for PBXNativeTarget "HHKit" */;
 			buildPhases = (
-				37A3AF2AA501216555DD9C4EF68A82AB /* Headers */,
-				3030CFBDB19348603C3EFC8122F8194D /* Sources */,
-				6BBF36137B6ADDB3D372DA0CA554A0D9 /* Frameworks */,
-				6D0843A3F9BBB4E266C0ACC3618BBCE8 /* Resources */,
+				C67260714B7FBE21A29A7A968096CD56 /* Headers */,
+				D572DDF514A4836D322B414FAE802A0C /* Sources */,
+				A94A473A6590931F2062FD2A6DCCD919 /* Frameworks */,
+				7C3F4B32285F62B4B5C4B48C2931B6BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				90562E221EB45B55145E918F364DAA77 /* PBXTargetDependency */,
-				73485DD692C0D737E6B940FFF2F1E064 /* PBXTargetDependency */,
-				DF927DB9EB9E3433C621F7A0F8863871 /* PBXTargetDependency */,
+				4710E76DCDCE148F0F58D5A000063A6A /* PBXTargetDependency */,
+				98559B034EEA86491FDB0ED99C303E22 /* PBXTargetDependency */,
+				7601ABF610472E80231C6BFC120B7D74 /* PBXTargetDependency */,
 			);
 			name = HHKit;
 			productName = HHKit;
@@ -864,21 +885,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3CD0FD335106FC330895C2471CA64AE5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		40494DA245FF9AD75B5A8B782067BDC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D6ADECC749D2C30003C00B65ED08AD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -892,11 +899,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D0843A3F9BBB4E266C0ACC3618BBCE8 /* Resources */ = {
+		6FDF71BCF3A77407BD09D2E1DE647CB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2FFFD5FF8A7D8970423AF0AA0AA734 /* HHKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3F4B32285F62B4B5C4B48C2931B6BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C928362CB7BEDC7D710C8807A4912FA /* HHKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9928D46FF71A37AD8356D1BFAA433803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,7 +928,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB5969CD7ACB9F9CF6DCA3F37130530C /* Resources */ = {
+		F2EFF4FC726ADE36B70A2133D5805035 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -917,35 +938,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		086224B5BC4BE74240C40DD2C8659364 /* Sources */ = {
+		0327DC7BF626A13802169CD82C58292F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42869DBE1CA2C078EC2E82B59EE1F97 /* Toast-dummy.m in Sources */,
-				3B0476B785FB89EFF399D8716D71A987 /* UIView+Toast.m in Sources */,
+				78F5635A46FB239D18A22489A57BE357 /* MBProgressHUD-dummy.m in Sources */,
+				9FA49381512F64DDBA9CB7DDE9927F58 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22B976757EEFAD2F9629B1D0A128979A /* Sources */ = {
+		1367A4D7CC2B8CE4C503B690373BFAAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C827ED429376CE99D9159A3314338D7E /* SPAlertController-dummy.m in Sources */,
-				0813ED92F373FB850F3E197EA9D7B499 /* SPAlertController.m in Sources */,
+				2B854CC84BB159B9E1205BB687E52801 /* SPAlertController-dummy.m in Sources */,
+				24DE34AE9062A787AB73CB6F9C9723EC /* SPAlertController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3030CFBDB19348603C3EFC8122F8194D /* Sources */ = {
+		480D869898344EE2CCA74216908C6082 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A44A36D6E5E602EB89BB43F9DBC4D07A /* HHAlertCustomTool.m in Sources */,
-				B828148379AF2618FAF053FF1796F9A9 /* HHAlertTool.m in Sources */,
-				3DE896A2D9CEB2D0DF828B5559713CFB /* HHKit-dummy.m in Sources */,
-				96FC2E95AE923C5C8C88B90BB055B2AE /* HHToastTool.m in Sources */,
-				008B083E871A725E936F4915F7B9D380 /* MBProgressHUD+HHTool.m in Sources */,
-				B2D966120AA55F900102FE46B904D7DA /* NSBundle+HHKit.m in Sources */,
-				CC6851CC7B44EEDB14E24F1B88B36800 /* UIWindow+HHHelper.m in Sources */,
+				9F48A5822A47FA4F65BA390DE1DDC122 /* Toast-dummy.m in Sources */,
+				2089536F1FD7120181123DF6649710C4 /* UIView+Toast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,12 +989,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5BAFCEF78088001C9D0811B6CEF714F /* Sources */ = {
+		D572DDF514A4836D322B414FAE802A0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A2D2F2A35075C10904AF28E4BA78D1F /* MBProgressHUD-dummy.m in Sources */,
-				5C0D7FD8CCC11D2D3427581FFD146DEF /* MBProgressHUD.m in Sources */,
+				67B5AF4371F2EB0D4252775C55A40BFD /* HHAlertCustomTool.m in Sources */,
+				362C9839E28EC2253F08C8D6E8B92FE8 /* HHAlertTool.m in Sources */,
+				75F4E152C69AB09BFDEB114C87303C29 /* HHConfiguration.m in Sources */,
+				1D00D397E0DF4B5763BF2E7707EF5E0C /* HHKit-dummy.m in Sources */,
+				FBFE3580F424575EC1AAD526F01EF6A8 /* HHPathTool.m in Sources */,
+				AC33C6F819B3EBF60AA8DCC101447376 /* HHToastTool.m in Sources */,
+				D7C2093B3E4A3DB9754AA0080D802597 /* MBProgressHUD+HHTool.m in Sources */,
+				63ACF9F3B6224497AF7298CF47F2A3DA /* NSBundle+HHKit.m in Sources */,
+				F000F18D97D40C6CED6B8109E19B3389 /* UIView+HHFrame.m in Sources */,
+				303DBE29EF1FF9689F46A849F3297267 /* UIWindow+HHHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,66 +1017,66 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		062CD0F08B111FA1F099CCBEA45DF12B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SPAlertController;
-			target = B9FD3DC67114E77A9D7C31D60926CF33 /* SPAlertController */;
-			targetProxy = 715D461232E982A15EAE9E3373A34CEB /* PBXContainerItemProxy */;
-		};
-		1BE3521804268BC6BFAACEBACB760B3B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 21CC250995CC9BE4763BB8B8B62FAA54 /* PBXContainerItemProxy */;
-		};
-		43C612BF1BA25F0CAD584FBC9BF8B7C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = 3679DCE659A657F6EAF6B1CDFB197BD3 /* PBXContainerItemProxy */;
-		};
-		6F9EDF56E3B2C9E5DD948C0467234970 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HHKit;
-			target = DE8145D5F05D43B90DE251E3A0DA0C24 /* HHKit */;
-			targetProxy = CDB9FFD3212635E3583F12B73E5BB959 /* PBXContainerItemProxy */;
-		};
-		73485DD692C0D737E6B940FFF2F1E064 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SPAlertController;
-			target = B9FD3DC67114E77A9D7C31D60926CF33 /* SPAlertController */;
-			targetProxy = 89DACCB3E275AFBDE966A44943F1C96F /* PBXContainerItemProxy */;
-		};
-		90562E221EB45B55145E918F364DAA77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = 588A6BAAEE700962C337954D4F397675 /* PBXContainerItemProxy */;
-		};
-		91CD4AE9F06974CDA6621E54079DDD1B /* PBXTargetDependency */ = {
+		38B35E52B498FDB0D2531D1031529A61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Toast;
 			target = A80A4D6B185BA43BC06122FED0C15F94 /* Toast */;
-			targetProxy = 1F4EA2CC698A563E7F5A60B82C7E18CF /* PBXContainerItemProxy */;
+			targetProxy = 0B660966858287730335BB24B27D0317 /* PBXContainerItemProxy */;
 		};
-		CF6DBF61951E3CD55A3C944BFC1BB6BC /* PBXTargetDependency */ = {
+		45E4FD6FFB9BE3CD2BD539328B5DFD7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPAlertController;
+			target = B9FD3DC67114E77A9D7C31D60926CF33 /* SPAlertController */;
+			targetProxy = 53103718340ACAEF5AB8FED52BBE65DA /* PBXContainerItemProxy */;
+		};
+		4710E76DCDCE148F0F58D5A000063A6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = B00C40023012BF1C256996596AAF7E23 /* PBXContainerItemProxy */;
+		};
+		645644A2B11C5970CC9D0A2AB74EAEF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HHKit_Example";
 			target = 362D4961566A2C533774D1268CD5953F /* Pods-HHKit_Example */;
-			targetProxy = 2FD8AA393E19430CFF6FA15CA01D366F /* PBXContainerItemProxy */;
+			targetProxy = 7368A5F71F016338809226E8EC8D7005 /* PBXContainerItemProxy */;
 		};
-		DF927DB9EB9E3433C621F7A0F8863871 /* PBXTargetDependency */ = {
+		7601ABF610472E80231C6BFC120B7D74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Toast;
 			target = A80A4D6B185BA43BC06122FED0C15F94 /* Toast */;
-			targetProxy = 5CCF42B2AF6B185866098C26089E966A /* PBXContainerItemProxy */;
+			targetProxy = 69D985C40E8D098259473356EAE8A871 /* PBXContainerItemProxy */;
+		};
+		8492E1CFA79630EDE8AC50856BEAF636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 3B20A206A423736F36CD62FDD353FA1A /* PBXContainerItemProxy */;
+		};
+		98559B034EEA86491FDB0ED99C303E22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SPAlertController;
+			target = B9FD3DC67114E77A9D7C31D60926CF33 /* SPAlertController */;
+			targetProxy = 26EFA3EBDFD66129F5DE7FBF1874C030 /* PBXContainerItemProxy */;
+		};
+		C6D7AB4095164C98759F9EC73209A89C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = 25ED7852965253A5964AAD0CBC31550E /* PBXContainerItemProxy */;
+		};
+		CA8A594A0E3EA57AC827114544208B74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HHKit;
+			target = DE8145D5F05D43B90DE251E3A0DA0C24 /* HHKit */;
+			targetProxy = A6ABA2BD0779C4D02C21FA7DBB1AC86B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		23D26569566B7CD86D7AD35B72B2AEB2 /* Debug */ = {
+		109E9B24887EB9A486887354CBCBA495 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DDDC60875317B3BD8DBC07164C1DD9B /* MBProgressHUD.debug.xcconfig */;
+			baseConfigurationReference = DF641C53948344F4C78450EA075C9DAF /* SPAlertController.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1062,14 +1086,44 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SPAlertController/SPAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPAlertController/SPAlertController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SPAlertController/SPAlertController.modulemap";
+				PRODUCT_MODULE_NAME = SPAlertController;
+				PRODUCT_NAME = SPAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15F1556326DACC399CF42B7B28297D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D2B9446D7A5EC50A32229817995E53 /* Toast.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
+				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
+				PRODUCT_MODULE_NAME = Toast;
+				PRODUCT_NAME = Toast;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1146,6 +1200,36 @@
 			};
 			name = Debug;
 		};
+		3BDA4DA4DF302F831C7C1F000E16C5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529E38E0BE85631C2C8AB1C43BF9A4D7 /* HHKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HHKit/HHKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HHKit/HHKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HHKit/HHKit.modulemap";
+				PRODUCT_MODULE_NAME = HHKit;
+				PRODUCT_NAME = HHKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C545E2DCBE918E1B4EC7B1F804B03D2 /* FBSnapshotTestCase.debug.xcconfig */;
@@ -1208,6 +1292,37 @@
 			};
 			name = Debug;
 		};
+		43528D998EC8E415DCCAEBFD6CA3647C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886EE0A552AC521F6B25AC7CF0C88A24 /* MBProgressHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		44F7C9C4BF77478FFDA529C42F952CE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B07915D5D7A85742366FF76B77CB2402 /* Pods-HHKit_Example.debug.xcconfig */;
@@ -1240,9 +1355,9 @@
 			};
 			name = Debug;
 		};
-		47B1CA85880100A92E1D641B5F911560 /* Release */ = {
+		4B6F56F9F9946ED5E71A71A0BDCCD688 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 967E496033BE45FB2DF966FDB661F284 /* SPAlertController.release.xcconfig */;
+			baseConfigurationReference = D38DCD0F7FB3B0A49FD36CAC4B3906FF /* HHKit.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1252,45 +1367,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SPAlertController/SPAlertController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SPAlertController/SPAlertController-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HHKit/HHKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HHKit/HHKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SPAlertController/SPAlertController.modulemap";
-				PRODUCT_MODULE_NAME = SPAlertController;
-				PRODUCT_NAME = SPAlertController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4ACD750F7DC08AD253637C9E56A4A23A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4437E578B7F03B1B091CD5F5720636C9 /* Toast.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
-				PRODUCT_MODULE_NAME = Toast;
-				PRODUCT_NAME = Toast;
+				MODULEMAP_FILE = "Target Support Files/HHKit/HHKit.modulemap";
+				PRODUCT_MODULE_NAME = HHKit;
+				PRODUCT_NAME = HHKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1335,9 +1419,9 @@
 			};
 			name = Release;
 		};
-		7DFC1F49D25AA1DFC69A21963893D40E /* Release */ = {
+		6687F89F7895597B34B0CD8DF1D7693C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB41F3E12EBCC4F856EB6F49682E1114 /* HHKit.release.xcconfig */;
+			baseConfigurationReference = 4437E578B7F03B1B091CD5F5720636C9 /* Toast.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1347,14 +1431,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HHKit/HHKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HHKit/HHKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HHKit/HHKit.modulemap";
-				PRODUCT_MODULE_NAME = HHKit;
-				PRODUCT_NAME = HHKit;
+				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
+				PRODUCT_MODULE_NAME = Toast;
+				PRODUCT_NAME = Toast;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1366,9 +1450,9 @@
 			};
 			name = Release;
 		};
-		8777CAE6DEEAED6F7B008492977CC3BA /* Release */ = {
+		7C9E24AC94E0CCA4ECA1269527750F89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 886EE0A552AC521F6B25AC7CF0C88A24 /* MBProgressHUD.release.xcconfig */;
+			baseConfigurationReference = 967E496033BE45FB2DF966FDB661F284 /* SPAlertController.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1378,14 +1462,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SPAlertController/SPAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SPAlertController/SPAlertController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
+				MODULEMAP_FILE = "Target Support Files/SPAlertController/SPAlertController.modulemap";
+				PRODUCT_MODULE_NAME = SPAlertController;
+				PRODUCT_NAME = SPAlertController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1522,9 +1606,9 @@
 			};
 			name = Release;
 		};
-		D284A9AD0653EA9CB53CCDC60BDB4C32 /* Debug */ = {
+		DA255943B518C9AFD157CE6F43099E6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9D2B9446D7A5EC50A32229817995E53 /* Toast.debug.xcconfig */;
+			baseConfigurationReference = 5DDDC60875317B3BD8DBC07164C1DD9B /* MBProgressHUD.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1534,74 +1618,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
-				PRODUCT_MODULE_NAME = Toast;
-				PRODUCT_NAME = Toast;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E574312C373988B098EA3997AAF3F09C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52204638F1E6A22467AEC36B4D831FC4 /* HHKit.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HHKit/HHKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HHKit/HHKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HHKit/HHKit.modulemap";
-				PRODUCT_MODULE_NAME = HHKit;
-				PRODUCT_NAME = HHKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E7D1664D3A18940DFD3CCEDD23BCB64B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF641C53948344F4C78450EA075C9DAF /* SPAlertController.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SPAlertController/SPAlertController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SPAlertController/SPAlertController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SPAlertController/SPAlertController.modulemap";
-				PRODUCT_MODULE_NAME = SPAlertController;
-				PRODUCT_NAME = SPAlertController;
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1624,15 +1648,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E434B313744687F9799E655407ADE9F /* Build configuration list for PBXNativeTarget "Toast" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D284A9AD0653EA9CB53CCDC60BDB4C32 /* Debug */,
-				4ACD750F7DC08AD253637C9E56A4A23A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1642,11 +1657,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		629BCA853958AF72924A683403664562 /* Build configuration list for PBXNativeTarget "HHKit" */ = {
+		77B869477655C8557385F220507E85E2 /* Build configuration list for PBXNativeTarget "HHKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E574312C373988B098EA3997AAF3F09C /* Debug */,
-				7DFC1F49D25AA1DFC69A21963893D40E /* Release */,
+				3BDA4DA4DF302F831C7C1F000E16C5AB /* Debug */,
+				4B6F56F9F9946ED5E71A71A0BDCCD688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B77F82A0CC019CE3AF9A6AAE7AFD75 /* Build configuration list for PBXNativeTarget "SPAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109E9B24887EB9A486887354CBCBA495 /* Debug */,
+				7C9E24AC94E0CCA4ECA1269527750F89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1660,20 +1684,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAB0F06A9E75A4AD0D492BD7A9BFA4FD /* Build configuration list for PBXNativeTarget "SPAlertController" */ = {
+		BB9303DA2DED3952857C3280E8D12349 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7D1664D3A18940DFD3CCEDD23BCB64B /* Debug */,
-				47B1CA85880100A92E1D641B5F911560 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD5CF89552172F1D5F41A0304939BFA7 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				23D26569566B7CD86D7AD35B72B2AEB2 /* Debug */,
-				8777CAE6DEEAED6F7B008492977CC3BA /* Release */,
+				DA255943B518C9AFD157CE6F43099E6D /* Debug */,
+				43528D998EC8E415DCCAEBFD6CA3647C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1683,6 +1698,15 @@
 			buildConfigurations = (
 				44F7C9C4BF77478FFDA529C42F952CE4 /* Debug */,
 				A2E5A9B83E8756E8C7A2DB7A242B0814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F741911A12D731A11DF7D70A773D981D /* Build configuration list for PBXNativeTarget "Toast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F1556326DACC399CF42B7B28297D17 /* Debug */,
+				6687F89F7895597B34B0CD8DF1D7693C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

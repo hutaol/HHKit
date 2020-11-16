@@ -11,6 +11,9 @@
 #import "HHToastTool.h"
 #import "HHAlertTool.h"
 #import "HHAlertCustomTool.h"
+#import "HHPathTool.h"
+
+#import "HHConfiguration.h"
 
 #import "UIView+HHFrame.h"
 #import "MBProgressHUD+HHTool.h"
