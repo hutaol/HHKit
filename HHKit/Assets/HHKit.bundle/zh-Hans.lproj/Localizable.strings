@@ -3,3 +3,8 @@
 "Tips" = "提示";
 "Done" = "确定";
 "LoadingWaiting" = "请稍后";
+"Save" = "保存";
+"SaveSuccess" = "保存成功";
+"SaveFailure" = "保存失败";
+"TakePicture" = "拍一张";
+"SelectFromPhoneAlbum" = "从手机相册选择";

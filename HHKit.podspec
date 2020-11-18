@@ -43,6 +43,7 @@ TODO: Add long description of the pod here.
   s.dependency 'Toast', '~> 4.0.0'
   s.dependency 'SPAlertController', '~> 4.0.0'
   s.dependency 'MBProgressHUD', '~> 1.2.0'
+  s.dependency 'HXPhotoPicker', '~> 3.1.5'
+  s.dependency 'HXPhotoPicker/SDWebImage', '~> 3.1.5'
   
-   
 end

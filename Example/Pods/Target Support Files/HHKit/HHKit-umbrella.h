@@ -16,6 +16,7 @@
 #import "HHDefine.h"
 #import "HHKit.h"
 #import "HHPathTool.h"
+#import "HHPhotoTool.h"
 #import "HHToastTool.h"
 #import "MBProgressHUD+HHTool.h"
 #import "NSBundle+HHKit.h"

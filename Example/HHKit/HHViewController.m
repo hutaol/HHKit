@@ -19,30 +19,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-////        [HHAlertTool alertWithMessage:@"2222"];
-//        [HHToastTool show:@"333333"];
-//    });
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
     btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (void)onClick {
-//    [MBProgressHUD showError:@"222222"];
-//    [MBProgressHUD show:@"3333"];
-//    [HHAlertCustomTool alertWithMessage:@"111"];
-//    [HHAlertTool sheetWithMessage:@"22" buttonTitles:@[@"33"] actionsBlock:^(NSInteger buttonIndex, NSString * _Nonnull buttonTitle) {
-//
-//    }];
-    [HHConfiguration languageType:HHLanguageChineseSimplified];
-    [HHAlertCustomTool alertWithMessage:@"111"];
 
-//    [HHAlertTool alertWithMessage:@"22"];
+    [HHConfiguration languageType:HHLanguageChineseTraditional];
+
+    [HHPhotoTool sheetPortraitWithController:self title:@"更换头像" completion:^(HHPhotoModel * _Nonnull model) {
+        
+    }];
     
+
 }
 
 - (void)didReceiveMemoryWarning
