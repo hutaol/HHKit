@@ -73,6 +73,72 @@
     
 }
 
++ (void)sheetImagePickerWithController:(UIViewController *)vc title:(NSString *)title count:(NSInteger)count edit:(BOOL)edit completion:(HHPhotoToolMultipleCompletion)completion {
+    
+    HXPhotoBottomViewModel *model1 = [[HXPhotoBottomViewModel alloc] init];
+    model1.title = title;
+    model1.titleColor = [UIColor hx_colorWithHexStr:@"#999999"];
+    model1.cellHeight = 40.f;
+    model1.titleFont = [UIFont systemFontOfSize:13];
+    model1.canSelect = NO;
+    
+    HXPhotoBottomViewModel *model2 = [[HXPhotoBottomViewModel alloc] init];
+    model2.title = GetLocalLanguageTextValue(@"TakePicture");
+    
+    HXPhotoBottomViewModel *model3 = [[HXPhotoBottomViewModel alloc] init];
+    model3.title = GetLocalLanguageTextValue(@"SelectFromPhoneAlbum");
+    
+    HXPhotoManager *photoManager = [HXPhotoManager managerWithType:HXPhotoManagerSelectedTypePhoto];
+    
+    photoManager.configuration.type = HXConfigurationTypeWXChat;
+    photoManager.configuration.languageType = [self getLanaguage];
+    
+    photoManager.configuration.lookGifPhoto = NO;
+    photoManager.configuration.lookLivePhoto = NO;
+    photoManager.configuration.openCamera = NO;
+    
+    photoManager.configuration.maxNum = count;
+    photoManager.configuration.singleSelected = count == 1;
+    
+    photoManager.configuration.photoCanEdit = edit;
+
+    [HXPhotoBottomSelectView showSelectViewWithModels:@[model1, model2, model3] selectCompletion:^(NSInteger index, HXPhotoBottomViewModel * _Nonnull model) {
+        
+        if (index == 1) {
+            // 拍照
+            [vc hx_presentCustomCameraViewControllerWithManager:photoManager done:^(HXPhotoModel *model, HXCustomCameraViewController *viewController) {
+                
+                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
+                if (completion) {
+                    completion(@[pModel]);
+                }
+
+            } cancel:nil];
+        } else if (index == 2) {
+            // 相册
+            [vc hx_presentSelectPhotoControllerWithManager:photoManager didDone:^(NSArray<HXPhotoModel *> * _Nullable allList, NSArray<HXPhotoModel *> * _Nullable photoList, NSArray<HXPhotoModel *> * _Nullable videoList, BOOL isOriginal, UIViewController * _Nullable viewController, HXPhotoManager * _Nullable manager) {
+                
+                NSMutableArray *mArr = [NSMutableArray array];
+                for (HXPhotoModel *model in allList) {
+                    if (model.subType == HXPhotoModelMediaSubTypePhoto) {
+                        HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
+                        [mArr addObject:pModel];
+                    } else {
+                        // 视频
+                        HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:model.videoURL isVideo:YES];
+                        [mArr addObject:pModel];
+                    }
+                    if (completion) {
+                        completion(mArr);
+                    }
+                }
+                
+            } cancel:nil];
+        }
+    } cancelClick:nil];
+    
+}
+
 + (void)imagePickerSingleWithController:(UIViewController *)vc seletedVideo:(BOOL)seletedVideo edit:(BOOL)edit completion:(HHPhotoToolCompletion)completion {
     
     HXPhotoManager *photoManager = [HXPhotoManager managerWithType:seletedVideo?HXPhotoManagerSelectedTypePhotoAndVideo:HXPhotoManagerSelectedTypePhoto];

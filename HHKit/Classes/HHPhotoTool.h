@@ -20,6 +20,10 @@ typedef void (^HHPhotoToolMultipleCompletion)(NSArray <HHPhotoModel *> *images);
 + (void)sheetPortraitWithController:(UIViewController *)vc title:(NSString *)title completion:(HHPhotoToolCompletion)completion;
 
 
+/// sheet 相册|拍照
++ (void)sheetImagePickerWithController:(UIViewController *)vc title:(NSString *)title count:(NSInteger)count edit:(BOOL)edit completion:(HHPhotoToolMultipleCompletion)completion;
+
+
 /// 单张
 + (void)imagePickerSingleWithController:(UIViewController *)vc seletedVideo:(BOOL)seletedVideo edit:(BOOL)edit completion:(HHPhotoToolCompletion)completion;
 
