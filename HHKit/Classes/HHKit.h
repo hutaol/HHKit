@@ -13,6 +13,7 @@
 #import "HHAlertCustomTool.h"
 #import "HHPathTool.h"
 #import "HHPhotoTool.h"
+#import "HHUIImagePicker.h"
 
 #import "HHConfiguration.h"
 

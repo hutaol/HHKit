@@ -8,3 +8,4 @@
 "SaveFailure" = "保存に失敗しました";
 "TakePicture" = "一枚撮ります";
 "SelectFromPhoneAlbum" = "携帯のアルバムから選択します";
+"CameraNotAvailable" = "カメラが使えません";

@@ -8,3 +8,4 @@
 "SaveFailure" = "保存失敗";
 "TakePicture" = "拍一張";
 "SelectFromPhoneAlbum" = "從手機相册選擇";
+"CameraNotAvailable" = "相機不可用";

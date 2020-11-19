@@ -9,6 +9,7 @@
 #import <HXPhotoPicker/HXPhotoPicker.h>
 #import "HHToastTool.h"
 #import "HHDefine.h"
+#import "HHUIImagePicker.h"
 
 @implementation HHPhotoTool
 
@@ -216,12 +217,47 @@
 
 
 /// 拍照
-+ (void)cameraWithController:(UIViewController *)vc video:(BOOL)video completion:(HHPhotoToolCompletion)completion {
++ (void)cameraWithController:(UIViewController *)vc video:(BOOL)video system:(BOOL)system completion:(HHPhotoToolCompletion)completion {
+    [self cameraWithController:vc video:video edit:YES system:system completion:completion];
+}
+
+
++ (void)cameraWithController:(UIViewController *)vc video:(BOOL)video edit:(BOOL)edit system:(BOOL)system completion:(HHPhotoToolCompletion)completion {
+    
+    if (system) {
+        
+        [[HHUIImagePicker shareInstance] presentPicker:(video?PickerType_Take:PickerType_Camera) target:vc callBackBlock:^(NSDictionary * _Nullable infoDict, BOOL isCancel) {
+            
+            if (isCancel) {
+                return;
+            }
+            
+            if (video) {
+                NSURL *url = [infoDict objectForKey:UIImagePickerControllerMediaURL]; // 视频路径
+                if (completion && url) {
+                    HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:url isVideo:YES];
+                    completion(pModel);
+                }
+            } else {
+                UIImage *image = [infoDict valueForKey:UIImagePickerControllerOriginalImage];
+                if (completion && image) {
+                    HHPhotoModel *pModel = [HHPhotoModel modelWithImage:image video:nil isVideo:NO];
+                    completion(pModel);
+                }
+            }
+            
+        }];
+        
+        return;
+    }
     
     HXPhotoManager *photoManager = [HXPhotoManager managerWithType:video?HXPhotoManagerSelectedTypePhotoAndVideo:HXPhotoManagerSelectedTypePhoto];
     
     photoManager.configuration.type = HXConfigurationTypeWXChat;
     photoManager.configuration.languageType = [self getLanaguage];
+    
+    photoManager.configuration.photoCanEdit = edit;
+    photoManager.configuration.videoCanEdit = edit;
 
     [vc hx_presentCustomCameraViewControllerWithManager:photoManager done:^(HXPhotoModel *model, HXCustomCameraViewController *viewController) {
         
@@ -309,14 +345,14 @@
     
     // 跳转预览界面时动画起始的view
     photoManager.configuration.customPreviewFromView = ^UIView *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0) {
+        if (!previews || previews.count == 0 || ![previews isKindOfClass:[UIView class]]) {
             return nil;
         }
         return previews.count > currentIndex ? previews[currentIndex] : nil;
     };
     // 跳转预览界面时展现动画的image
     photoManager.configuration.customPreviewFromImage = ^UIImage *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0) {
+        if (!previews || previews.count == 0 || ![previews isKindOfClass:[UIView class]]) {
             return nil;
         }
         if (previews.count > currentIndex) {
@@ -329,7 +365,7 @@
     };
     // 退出预览界面时终点view
     photoManager.configuration.customPreviewToView = ^UIView *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0) {
+        if (!previews || previews.count == 0 || ![previews isKindOfClass:[UIView class]]) {
             return nil;
         }
         return previews.count > currentIndex ? previews[currentIndex] : nil;

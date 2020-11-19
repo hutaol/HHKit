@@ -18,6 +18,7 @@
 #import "HHPathTool.h"
 #import "HHPhotoTool.h"
 #import "HHToastTool.h"
+#import "HHUIImagePicker.h"
 #import "MBProgressHUD+HHTool.h"
 #import "NSBundle+HHKit.h"
 #import "UIView+HHFrame.h"

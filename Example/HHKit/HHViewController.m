@@ -29,13 +29,12 @@
 
 - (void)onClick {
 
-    [HHConfiguration languageType:HHLanguageChineseTraditional];
+    [HHConfiguration languageType:HHLanguageChineseSimplified];
 
     [HHPhotoTool sheetPortraitWithController:self title:@"更换头像" completion:^(HHPhotoModel * _Nonnull model) {
-        
+
     }];
     
-
 }
 
 - (void)didReceiveMemoryWarning

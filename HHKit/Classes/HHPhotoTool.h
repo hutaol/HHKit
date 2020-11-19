@@ -32,8 +32,9 @@ typedef void (^HHPhotoToolMultipleCompletion)(NSArray <HHPhotoModel *> *images);
 + (void)imagePickerMultipleWithController:(UIViewController *)vc count:(NSInteger)count seletedVideo:(BOOL)seletedVideo completion:(HHPhotoToolMultipleCompletion)completion;
 
 
-/// 拍照|视频
-+ (void)cameraWithController:(UIViewController *)vc video:(BOOL)video completion:(HHPhotoToolCompletion)completion;
+/// 拍照|视频 默认可编辑
++ (void)cameraWithController:(UIViewController *)vc video:(BOOL)video system:(BOOL)system completion:(HHPhotoToolCompletion)completion;
++ (void)cameraWithController:(UIViewController *)vc video:(BOOL)video edit:(BOOL)edit system:(BOOL)system completion:(HHPhotoToolCompletion)completion;
 
 
 /// 预览图片|视频
