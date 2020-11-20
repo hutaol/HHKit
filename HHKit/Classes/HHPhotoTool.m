@@ -160,16 +160,50 @@
         HXPhotoModel *model = allList.firstObject;
 
         if (model.subType == HXPhotoModelMediaSubTypePhoto) {
+            
+            if (model.previewPhoto) {
+                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
+                if (completion) {
+                    completion(pModel);
+                }
+                return;
+            }
+            
+            [model getImageWithSuccess:^(UIImage * _Nullable image, HXPhotoModel * _Nullable model, NSDictionary * _Nullable info) {
+                
+                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:image video:nil isVideo:NO];
+                if (completion) {
+                    completion(pModel);
+                }
+                
+            } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
+                NSLog(@"failed: %@", info);
+            }];
+            
             HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
             if (completion) {
                 completion(pModel);
             }
         } else {
             // 视频
-            HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:model.videoURL isVideo:YES];
-            if (completion) {
-                completion(pModel);
+            if (model.videoURL) {
+                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:model.videoURL isVideo:YES];
+                if (completion) {
+                    completion(pModel);
+                }
+                return;
             }
+            
+            [model getAssetURLWithSuccess:^(NSURL * _Nullable URL, HXPhotoModelMediaSubType mediaType, BOOL isNetwork, HXPhotoModel * _Nullable model) {
+                
+                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:URL isVideo:YES];
+                if (completion) {
+                    completion(pModel);
+                }
+                
+            } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
+                NSLog(@"failed: %@", info);
+            }];
         }
         
     } cancel:^(UIViewController * _Nullable viewController, HXPhotoManager * _Nullable manager) {

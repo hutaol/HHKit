@@ -32,18 +32,18 @@
 //    [HHConfiguration languageType:HHLanguageChineseSimplified];
 //
 //    [HHPhotoTool sheetPortraitWithController:self title:@"更换头像" completion:^(HHPhotoModel * _Nonnull model) {
+//        NSLog(@"%@", model.image);
+//    }];
+    
+    [HHPhotoTool imagePickerSingleWithController:self seletedVideo:NO edit:YES completion:^(HHPhotoModel * _Nonnull model) {
+        NSLog(@"%@", model.image);
+
+    }];
+
+//    [HHPhotoTool imagePickerMultipleWithController:self count:3 seletedVideo:NO completion:^(NSArray<HHPhotoModel *> * _Nonnull images) {
+//        NSLog(@"%@", images);
 //
 //    }];
-    
-//    [HHAlertCustomTool inputWithTitle:@"dd" message:@"11" placeholder:@"11" cancel:@"取消" confirm:@"dd" confirmBlock:^(NSString * _Nonnull inputText) {
-//        NSLog(@"%@", inputText);
-//    }];
-    [HHAlertCustomTool inputWithTitle:@"1" message:@"2" placeholders:@[@"1", @"2"] cancelTitle:@"ddd" buttonTitles:@[@"222"] actionsBlock:^(NSInteger buttonIndex, NSString * _Nonnull buttonTitle, NSArray<UITextField *> * _Nonnull textFields) {
-        
-    }];
-    
-//    [HHAlertCustomTool ]
-    
 }
 
 - (void)didReceiveMemoryWarning
