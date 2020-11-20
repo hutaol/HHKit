@@ -126,4 +126,54 @@
     }];
 }
 
+
+/// 带输入框
++ (void)inputWithTitle:(NSString *)title message:(NSString *)message placeholders:(NSArray<NSString *> *)placeholders cancelTitle:(NSString *)cancelTitle buttonTitles:(NSArray<NSString *> *)buttonTitles actionsBlock:(void (^)(NSInteger, NSString * _Nonnull, NSArray<UITextField *> * _Nonnull))actionsBlock {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+
+    NSMutableArray *textArr = @[].mutableCopy;
+    if (placeholders.count > 0) {
+        [placeholders enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                textField.keyboardType = UIKeyboardTypePhonePad;
+                textField.placeholder = obj;
+                [textArr addObject:textField];
+            }];
+        }];
+    }
+    
+    
+    if (cancelTitle) {
+        UIAlertAction *action = [UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            if (actionsBlock) {
+                actionsBlock(-1, action.title, textArr);
+            }
+        }];
+        [alertController addAction:action];
+    }
+    
+    for (int i = 0; i < buttonTitles.count; i++) {
+        UIAlertAction *action = [UIAlertAction actionWithTitle:[buttonTitles objectAtIndex:i] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            if (actionsBlock) {
+                actionsBlock(i, action.title, textArr);
+            }
+        }];
+        [alertController addAction:action];
+    }
+
+    [[self topViewController] presentViewController:alertController animated:YES completion:nil];
+}
+
++ (void)inputWithTitle:(NSString *)title message:(NSString *)message placeholder:(NSString *)placeholder cancel:(NSString *)cancel confirm:(NSString *)confirm confirmBlock:(void (^)(NSString * _Nonnull))confirmBlock {
+    
+    [self inputWithTitle:title message:message placeholders:@[placeholder] cancelTitle:cancel buttonTitles:@[confirm] actionsBlock:^(NSInteger buttonIndex, NSString * _Nonnull buttonTitle, NSArray<UITextField *> * _Nonnull textFields) {
+        if (buttonIndex == 0) {
+            if (confirmBlock && textFields.count > 0) {
+                confirmBlock(textFields.firstObject.text);
+            }
+        }
+    }];
+}
+
 @end

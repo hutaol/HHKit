@@ -8,7 +8,7 @@
 #import "HHUIImagePicker.h"
 #import "HHAlertTool.h"
 #import "HHDefine.h"
-#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreServices/CoreServices.h>
 
 
 @interface HHUIImagePicker () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
