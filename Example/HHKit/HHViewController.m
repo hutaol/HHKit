@@ -29,11 +29,20 @@
 
 - (void)onClick {
 
-    [HHConfiguration languageType:HHLanguageChineseSimplified];
-
-    [HHPhotoTool sheetPortraitWithController:self title:@"更换头像" completion:^(HHPhotoModel * _Nonnull model) {
-
+//    [HHConfiguration languageType:HHLanguageChineseSimplified];
+//
+//    [HHPhotoTool sheetPortraitWithController:self title:@"更换头像" completion:^(HHPhotoModel * _Nonnull model) {
+//
+//    }];
+    
+//    [HHAlertCustomTool inputWithTitle:@"dd" message:@"11" placeholder:@"11" cancel:@"取消" confirm:@"dd" confirmBlock:^(NSString * _Nonnull inputText) {
+//        NSLog(@"%@", inputText);
+//    }];
+    [HHAlertCustomTool inputWithTitle:@"1" message:@"2" placeholders:@[@"1", @"2"] cancelTitle:@"ddd" buttonTitles:@[@"222"] actionsBlock:^(NSInteger buttonIndex, NSString * _Nonnull buttonTitle, NSArray<UITextField *> * _Nonnull textFields) {
+        
     }];
+    
+//    [HHAlertCustomTool ]
     
 }
 
