@@ -180,10 +180,6 @@
                 NSLog(@"failed: %@", info);
             }];
             
-            HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
-            if (completion) {
-                completion(pModel);
-            }
         } else {
             // 视频
             if (model.videoURL) {
