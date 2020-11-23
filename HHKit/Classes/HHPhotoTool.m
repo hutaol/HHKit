@@ -379,14 +379,14 @@
     
     // 跳转预览界面时动画起始的view
     photoManager.configuration.customPreviewFromView = ^UIView *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0 || ![previews isKindOfClass:[UIView class]]) {
+        if (!previews || previews.count == 0 || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
             return nil;
         }
         return previews.count > currentIndex ? previews[currentIndex] : nil;
     };
     // 跳转预览界面时展现动画的image
     photoManager.configuration.customPreviewFromImage = ^UIImage *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0 || ![previews isKindOfClass:[UIView class]]) {
+        if (!previews || previews.count == 0 || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
             return nil;
         }
         if (previews.count > currentIndex) {
@@ -399,7 +399,7 @@
     };
     // 退出预览界面时终点view
     photoManager.configuration.customPreviewToView = ^UIView *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0 || ![previews isKindOfClass:[UIView class]]) {
+        if (!previews || previews.count == 0 || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
             return nil;
         }
         return previews.count > currentIndex ? previews[currentIndex] : nil;
