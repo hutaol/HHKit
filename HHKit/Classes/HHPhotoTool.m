@@ -18,6 +18,42 @@
     return type;
 }
 
++ (void)getPhoto:(HXPhotoModel *)model success:(void(^)(HHPhotoModel *photo))success failed:(HXModelFailedBlock)failed {
+    if (model.subType == HXPhotoModelMediaSubTypePhoto) {
+        
+        [model getImageWithSuccess:^(UIImage * _Nullable image, HXPhotoModel * _Nullable model, NSDictionary * _Nullable info) {
+            
+            HHPhotoModel *pModel = [HHPhotoModel modelWithImage:image video:nil isVideo:NO];
+
+            if (success) {
+                success(pModel);
+            }
+            
+        } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
+            NSLog(@"failed: %@", info);
+            if (failed) {
+                failed(info, model);
+            }
+        }];
+    } else {
+        [model getAssetURLWithSuccess:^(NSURL * _Nullable URL, HXPhotoModelMediaSubType mediaType, BOOL isNetwork, HXPhotoModel * _Nullable model) {
+            
+            HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:URL isVideo:YES];
+            
+            if (success) {
+                success(pModel);
+            }
+            
+        } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
+            NSLog(@"failed: %@", info);
+            if (failed) {
+                failed(info, model);
+            }
+        }];
+    }
+    
+}
+
 + (void)sheetPortraitWithController:(UIViewController *)vc title:(NSString *)title completion:(HHPhotoToolCompletion)completion {
     
     HXPhotoBottomViewModel *model1 = [[HXPhotoBottomViewModel alloc] init];
@@ -52,22 +88,15 @@
             // 拍照
             [vc hx_presentCustomCameraViewControllerWithManager:photoManager done:^(HXPhotoModel *model, HXCustomCameraViewController *viewController) {
                 
-                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
-                if (completion) {
-                    completion(pModel);
-                }
+                [self getPhoto:model success:completion failed:nil];
 
             } cancel:nil];
         } else if (index == 2) {
             // 相册
             [vc hx_presentSelectPhotoControllerWithManager:photoManager didDone:^(NSArray<HXPhotoModel *> * _Nullable allList, NSArray<HXPhotoModel *> * _Nullable photoList, NSArray<HXPhotoModel *> * _Nullable videoList, BOOL isOriginal, UIViewController * _Nullable viewController, HXPhotoManager * _Nullable manager) {
-                HXPhotoModel *photoModel = allList.firstObject;
-                // 因为是编辑过的照片所以直接取
-                if (completion) {
-                    HHPhotoModel *pModel = [HHPhotoModel modelWithImage:photoModel.photoEdit.editPreviewImage video:nil isVideo:NO];
-                    completion(pModel);
-                }
                 
+                [self getPhoto:allList.firstObject success:completion failed:nil];
+
             } cancel:nil];
         }
     } cancelClick:nil];
@@ -113,6 +142,12 @@
                 if (completion) {
                     completion(@[pModel]);
                 }
+                
+                [self getPhoto:model success:^(HHPhotoModel *photo) {
+                    if (completion) {
+                        completion(@[photo]);
+                    }
+                } failed:nil];
 
             } cancel:nil];
         } else if (index == 2) {
@@ -120,18 +155,25 @@
             [vc hx_presentSelectPhotoControllerWithManager:photoManager didDone:^(NSArray<HXPhotoModel *> * _Nullable allList, NSArray<HXPhotoModel *> * _Nullable photoList, NSArray<HXPhotoModel *> * _Nullable videoList, BOOL isOriginal, UIViewController * _Nullable viewController, HXPhotoManager * _Nullable manager) {
                 
                 NSMutableArray *mArr = [NSMutableArray array];
-                for (HXPhotoModel *model in allList) {
-                    if (model.subType == HXPhotoModelMediaSubTypePhoto) {
-                        HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
-                        [mArr addObject:pModel];
-                    } else {
-                        // 视频
-                        HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:model.videoURL isVideo:YES];
-                        [mArr addObject:pModel];
-                    }
-                    if (completion) {
-                        completion(mArr);
-                    }
+                for (int i = 0; i < allList.count; ++i) {
+                    [self getPhoto:allList[i] success:^(HHPhotoModel *photo) {
+                        
+                        [mArr addObject:photo];
+                        
+                        if (i == allList.count - 1) {
+                            if (completion) {
+                                completion(mArr);
+                            }
+                        }
+                        
+                    } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
+                        
+                        if (i == allList.count - 1) {
+                            if (completion) {
+                                completion(mArr);
+                            }
+                        }
+                    }];
                 }
                 
             } cancel:nil];
@@ -159,49 +201,8 @@
 
         HXPhotoModel *model = allList.firstObject;
 
-        if (model.subType == HXPhotoModelMediaSubTypePhoto) {
-            
-            if (model.previewPhoto) {
-                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
-                if (completion) {
-                    completion(pModel);
-                }
-                return;
-            }
-            
-            [model getImageWithSuccess:^(UIImage * _Nullable image, HXPhotoModel * _Nullable model, NSDictionary * _Nullable info) {
+        [self getPhoto:model success:completion failed:nil];
                 
-                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:image video:nil isVideo:NO];
-                if (completion) {
-                    completion(pModel);
-                }
-                
-            } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
-                NSLog(@"failed: %@", info);
-            }];
-            
-        } else {
-            // 视频
-            if (model.videoURL) {
-                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:model.videoURL isVideo:YES];
-                if (completion) {
-                    completion(pModel);
-                }
-                return;
-            }
-            
-            [model getAssetURLWithSuccess:^(NSURL * _Nullable URL, HXPhotoModelMediaSubType mediaType, BOOL isNetwork, HXPhotoModel * _Nullable model) {
-                
-                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:URL isVideo:YES];
-                if (completion) {
-                    completion(pModel);
-                }
-                
-            } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
-                NSLog(@"failed: %@", info);
-            }];
-        }
-        
     } cancel:^(UIViewController * _Nullable viewController, HXPhotoManager * _Nullable manager) {
         
     }];
@@ -225,19 +226,25 @@
         NSSLog(@"block - all - %@", allList);
 
         NSMutableArray *mArr = [NSMutableArray array];
-        for (HXPhotoModel *model in allList) {
-            if (model.subType == HXPhotoModelMediaSubTypePhoto) {
-                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
-                [mArr addObject:pModel];
-            } else {
-                // 视频
-                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:model.videoURL isVideo:YES];
-                [mArr addObject:pModel];
-            }
-        }
-
-        if (completion) {
-            completion(mArr);
+        for (int i = 0; i < allList.count; ++i) {
+            [self getPhoto:allList[i] success:^(HHPhotoModel *photo) {
+                
+                [mArr addObject:photo];
+                
+                if (i == allList.count - 1) {
+                    if (completion) {
+                        completion(mArr);
+                    }
+                }
+                
+            } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
+                
+                if (i == allList.count - 1) {
+                    if (completion) {
+                        completion(mArr);
+                    }
+                }
+            }];
         }
         
     } cancel:^(UIViewController *viewController, HXPhotoManager *manager) {
@@ -291,10 +298,7 @@
 
     [vc hx_presentCustomCameraViewControllerWithManager:photoManager done:^(HXPhotoModel *model, HXCustomCameraViewController *viewController) {
         
-        HHPhotoModel *pModel = [HHPhotoModel modelWithImage:model.previewPhoto video:nil isVideo:NO];
-        if (completion) {
-            completion(pModel);
-        }
+        [self getPhoto:model success:completion failed:nil];
 
     } cancel:nil];
 }
@@ -436,14 +440,7 @@
         
         if (completion) {
             
-            if (photoModel.subType == HXPhotoModelMediaSubTypePhoto) {
-                HHPhotoModel *pModel = [HHPhotoModel modelWithImage:photoModel.photoEdit.editPreviewImage video:nil isVideo:NO];
-                completion(pModel);
-
-            } else {
-               HHPhotoModel *pModel = [HHPhotoModel modelWithImage:nil video:photoModel.videoURL  isVideo:YES];
-                completion(pModel);
-            }
+            [self getPhoto:photoModel success:completion failed:nil];
 
         }
         

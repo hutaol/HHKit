@@ -35,15 +35,18 @@
 //        NSLog(@"%@", model.image);
 //    }];
     
-    [HHPhotoTool imagePickerSingleWithController:self seletedVideo:NO edit:YES completion:^(HHPhotoModel * _Nonnull model) {
-        NSLog(@"%@", model.image);
-
-    }];
-
-//    [HHPhotoTool imagePickerMultipleWithController:self count:3 seletedVideo:NO completion:^(NSArray<HHPhotoModel *> * _Nonnull images) {
-//        NSLog(@"%@", images);
+//    [HHPhotoTool imagePickerSingleWithController:self seletedVideo:NO edit:YES completion:^(HHPhotoModel * _Nonnull model) {
+//        NSLog(@"%@", model.image);
 //
 //    }];
+
+    [HHPhotoTool imagePickerMultipleWithController:self count:3 seletedVideo:NO completion:^(NSArray<HHPhotoModel *> * _Nonnull images) {
+        for (HHPhotoModel *image in images) {
+            NSLog(@"%@", image.image);
+
+        }
+
+    }];
 }
 
 - (void)didReceiveMemoryWarning
