@@ -155,24 +155,19 @@
             [vc hx_presentSelectPhotoControllerWithManager:photoManager didDone:^(NSArray<HXPhotoModel *> * _Nullable allList, NSArray<HXPhotoModel *> * _Nullable photoList, NSArray<HXPhotoModel *> * _Nullable videoList, BOOL isOriginal, UIViewController * _Nullable viewController, HXPhotoManager * _Nullable manager) {
                 
                 NSMutableArray *mArr = [NSMutableArray array];
-                for (int i = 0; i < allList.count; ++i) {
+                for (int i = 0; i < allList.count; i++) {
                     [self getPhoto:allList[i] success:^(HHPhotoModel *photo) {
                         
                         [mArr addObject:photo];
                         
-                        if (i == allList.count - 1) {
+                        if (mArr.count == allList.count) {
                             if (completion) {
                                 completion(mArr);
                             }
                         }
                         
                     } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
-                        
-                        if (i == allList.count - 1) {
-                            if (completion) {
-                                completion(mArr);
-                            }
-                        }
+                        // TODO
                     }];
                 }
                 
@@ -226,24 +221,20 @@
         NSSLog(@"block - all - %@", allList);
 
         NSMutableArray *mArr = [NSMutableArray array];
-        for (int i = 0; i < allList.count; ++i) {
+        for (int i = 0; i < allList.count; i++) {
             [self getPhoto:allList[i] success:^(HHPhotoModel *photo) {
                 
                 [mArr addObject:photo];
                 
-                if (i == allList.count - 1) {
+                if (mArr.count == allList.count) {
                     if (completion) {
                         completion(mArr);
                     }
                 }
                 
             } failed:^(NSDictionary * _Nullable info, HXPhotoModel * _Nullable model) {
+                // TODO
                 
-                if (i == allList.count - 1) {
-                    if (completion) {
-                        completion(mArr);
-                    }
-                }
             }];
         }
         
@@ -379,27 +370,25 @@
     
     // 跳转预览界面时动画起始的view
     photoManager.configuration.customPreviewFromView = ^UIView *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0 || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
+        if (!previews || previews.count <= currentIndex || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
             return nil;
         }
         return previews.count > currentIndex ? previews[currentIndex] : nil;
     };
     // 跳转预览界面时展现动画的image
     photoManager.configuration.customPreviewFromImage = ^UIImage *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0 || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
+        if (!previews || previews.count <= currentIndex || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
             return nil;
         }
-        if (previews.count > currentIndex) {
-            if ([previews[currentIndex] isKindOfClass:[UIImageView class]]) {
-                UIImageView *imageView = (UIImageView *)previews[currentIndex];
-                return imageView.image;
-            }
+        if ([previews[currentIndex] isKindOfClass:[UIImageView class]]) {
+            UIImageView *imageView = (UIImageView *)previews[currentIndex];
+            return imageView.image;
         }
         return nil;
     };
     // 退出预览界面时终点view
     photoManager.configuration.customPreviewToView = ^UIView *(NSInteger currentIndex) {
-        if (!previews || previews.count == 0 || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
+        if (!previews || previews.count <= currentIndex || ![previews[currentIndex] isKindOfClass:[UIView class]]) {
             return nil;
         }
         return previews.count > currentIndex ? previews[currentIndex] : nil;
