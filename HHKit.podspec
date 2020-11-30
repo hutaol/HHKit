@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHKit'
-  s.version          = '0.0.14'
+  s.version          = '0.0.15'
   s.summary          = 'A short description of HHKit.'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
   s.dependency 'Toast', '~> 4.0.0'
   s.dependency 'SPAlertController', '~> 4.0.0'
   s.dependency 'MBProgressHUD', '~> 1.2.0'
-  s.dependency 'HXPhotoPicker', '~> 3.1.5'
-  s.dependency 'HXPhotoPicker/SDWebImage', '~> 3.1.5'
+  s.dependency 'HXPhotoPicker', '~> 3.1.6'
+  s.dependency 'HXPhotoPicker/SDWebImage', '~> 3.1.6'
   
 end

@@ -4,21 +4,21 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HHKit (0.0.6):
-    - HXPhotoPicker (~> 3.1.5)
-    - HXPhotoPicker/SDWebImage (~> 3.1.5)
+  - HHKit (0.0.14):
+    - HXPhotoPicker (~> 3.1.6)
+    - HXPhotoPicker/SDWebImage (~> 3.1.6)
     - MBProgressHUD (~> 1.2.0)
     - SPAlertController (~> 4.0.0)
     - Toast (~> 4.0.0)
-  - HXPhotoPicker (3.1.5):
-    - HXPhotoPicker/Default (= 3.1.5)
-  - HXPhotoPicker/Default (3.1.5)
-  - HXPhotoPicker/SDWebImage (3.1.5):
+  - HXPhotoPicker (3.1.6):
+    - HXPhotoPicker/Default (= 3.1.6)
+  - HXPhotoPicker/Default (3.1.6)
+  - HXPhotoPicker/SDWebImage (3.1.6):
     - SDWebImage (~> 5.0)
   - MBProgressHUD (1.2.0)
-  - SDWebImage (5.9.4):
-    - SDWebImage/Core (= 5.9.4)
-  - SDWebImage/Core (5.9.4)
+  - SDWebImage (5.10.0):
+    - SDWebImage/Core (= 5.10.0)
+  - SDWebImage/Core (5.10.0)
   - SPAlertController (4.0.0)
   - Toast (4.0.0)
 
@@ -41,10 +41,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HHKit: ce77d54283fe53ff86b11fc4e7a0b1140ba8e5a9
-  HXPhotoPicker: 86b84c848ff5ae247d07dd9b31d4a83b80bee719
+  HHKit: bbc077034edb6e1e1bbc4983168f85ad59449ba8
+  HXPhotoPicker: 508ca7af32e9f4a1b155abd2694a3b42b87ae7a5
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
   SPAlertController: b245d7a5e17d612da051f2612aca3703f21d108f
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 

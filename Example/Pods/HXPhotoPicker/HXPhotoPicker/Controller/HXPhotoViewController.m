@@ -1,6 +1,6 @@
 //
 //  HXPhotoViewController.m
-//  HXPhotoPicker-Demo
+//  HXPhotoPickerExample
 //
 //  Created by 洪欣 on 2017/10/14.
 //  Copyright © 2017年 洪欣. All rights reserved.
@@ -192,7 +192,7 @@ HX_PhotoEditViewControllerDelegate
         [self authorizationHandler];
         HXWeakSelf
         self.hx_customNavigationController.reloadAsset = ^(BOOL initialAuthorization){
-            if (initialAuthorization) {
+            if (initialAuthorization == YES) {
                 if (weakSelf.manager.configuration.navigationBar) {
                     weakSelf.manager.configuration.navigationBar(weakSelf.navigationController.navigationBar, weakSelf);
                 }
@@ -1091,6 +1091,9 @@ HX_PhotoEditViewControllerDelegate
     if (!self.manager.configuration.singleSelected) {
         [self.manager beforeListAddCameraTakePicturesModel:model];
     }
+    if ([HXPhotoTools authorizationStatusIsLimited]) {
+        return;
+    }
     if (model.asset) {
         [self.manager addTempCameraAssetModel:model];
     }
@@ -1098,7 +1101,7 @@ HX_PhotoEditViewControllerDelegate
         model.type != HXPhotoModelMediaTypeCameraVideo) {
         HXAlbumModel *albumModel = self.albumView.albumModelArray.firstObject;
         if (albumModel.count == 0) {
-            albumModel.assetResult = [HXAssetManager fetchAssetWithLocalIdentifier:model.localIdentifier];
+            albumModel.assetResult = [PHAsset fetchAssetsWithLocalIdentifiers:@[model.localIdentifier] options:nil];
         }
         albumModel.count++;
     }

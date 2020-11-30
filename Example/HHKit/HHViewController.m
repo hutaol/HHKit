@@ -8,6 +8,7 @@
 
 #import "HHViewController.h"
 #import <HHKit/HHKit.h>
+#import <SDWebImage/SDWebImage.h>
 
 
 @interface HHViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -25,6 +26,9 @@
     
     self.dataSource = [NSMutableArray array];
     
+    [self.dataSource addObject:[NSURL URLWithString:@"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2387296049,4035594974&fm=26&gp=0.jpg"]];
+    [self.dataSource addObject:[NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606731424192&di=8cbd7e821359d80cca0a12a3781819aa&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F120405%2F10016-120405002t840.jpg"]];
+    
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
     btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
@@ -38,11 +42,12 @@
     [self.view addSubview:self.tableView];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:UIBarButtonItemStylePlain target:self action:@selector(onClick)];
+    
 }
 
 - (void)onClick {
 
-    [HHPhotoTool imagePickerMultipleWithController:self count:3 seletedVideo:NO completion:^(NSArray<HHPhotoModel *> * _Nonnull images) {
+    [HHPhotoTool imagePickerMultipleWithController:self count:9 seletedVideo:NO completion:^(NSArray<HHPhotoModel *> * _Nonnull images) {
         for (HHPhotoModel *image in images) {
             NSLog(@"%@", image.image);
             [self.dataSource addObject:image.image];
@@ -59,13 +64,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-    cell.imageView.image = self.dataSource[indexPath.row];
+    if ([self.dataSource[indexPath.row] isKindOfClass:[UIImage class]]) {
+        cell.imageView.image = self.dataSource[indexPath.row];
+    } else {
+        [cell.imageView sd_setImageWithURL:self.dataSource[indexPath.row]];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
             
+    
     [HHPhotoTool showImageWithController:self source:self.dataSource previews:[self cellsForTableView:tableView] index:indexPath.row];
 }
 
@@ -91,6 +101,30 @@
 
     return cells;
 
+}
+
+- (NSArray *)cellImagesForTableView:(UITableView *)tableView {
+    NSInteger sections = tableView.numberOfSections;
+
+    NSMutableArray *cells = [[NSMutableArray alloc]  init];
+
+    for (int section = 0; section < sections; section++) {
+
+        NSInteger rows =  [tableView numberOfRowsInSection:section];
+
+        for (int row = 0; row < rows; row++) {
+
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:section];
+
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            [cells addObject:cell.imageView.image];
+//            [cells addObject:[tableView cellForRowAtIndexPath:indexPath].imageView];
+
+        }
+
+    }
+
+    return cells;
 }
 
 @end
